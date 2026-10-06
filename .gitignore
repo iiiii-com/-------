@@ -1,0 +1,12 @@
+# 构建/临时文件（非站点内容）
+_corpus/
+_master.json
+_*.js
+_*.py
+_*.json
+shots/
+
+# 操作系统
+Thumbs.db
+Desktop.ini
+.DS_Store

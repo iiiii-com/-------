@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>中国法律可视化地图 · 骨架总览与重点条文精讲</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div class="topbar"><div class="inner">
+  <a class="brand" href="index.html"><i></i>法律可视化地图</a>
+  <a class="pg active" href="index.html">总览</a>
+  <a class="pg" href="labor.html">劳动</a>
+  <a class="pg" href="civil.html">民法</a>
+  <a class="pg" href="criminal.html">刑法</a>
+  <a class="pg" href="consumer.html">消费</a>
+  <a class="pg" href="traffic.html">交通</a>
+  <a class="pg" href="admin.html">行政</a>
+  <a class="pg" href="procedure.html">程序</a>
+  <a class="pg" href="constitution.html">宪法</a>
+  <a class="pg" href="company.html">公司</a>
+  <a class="pg" href="family.html">家事</a>
+  <a class="pg" href="cyber.html">网络</a>
+  <a class="pg" href="contract.html">合同</a>
+  <a class="pg" href="finance.html">金融</a>
+  <a class="pg" href="special.html">救助</a>
+  <a class="pg" href="tax.html">税收</a>
+  <a class="pg" href="housing.html">房产</a>
+  <a class="pg" href="study.html">学法</a>
+</div></div>
+<div class="wrap">
+
+<header class="hero">
+  <div class="badge-top">● 可视化法律学习地图 · 第一版（骨架 + 重点条文）</div>
+  <h1>中国法律可视化地图</h1>
+  <p class="lead">把"一整套法律"压缩成一眼能看懂的结构图与高频条文卡片，为普通人降低门槛，为想高效系统学习的人提供骨架。<b>先有骨架，再逐层填肉。</b></p>
+  <div class="hero-stats">
+    <div><b>7</b><span>大部门法</span></div>
+    <div><b>5</b><span>级法律效力</span></div>
+    <div><b>17</b><span>条重点条文精讲</span></div>
+    <div><b>4</b><span>个实用计算器</span></div>
+    <div><b>18</b><span>个分卷</span></div>
+  </div>
+</header>
+
+<nav class="toc">
+  <b>目录导航</b>
+  <a href="#s0">§0 骨架总览</a>
+  <a href="#s1">§1 法律效力层级</a>
+  <a href="#s2">§2 七大部门法</a>
+  <a href="#s3">§3 重点条文精讲</a>
+  <a href="#a-civil" class="sub">民法典高频条文</a>
+  <a href="#a-crim" class="sub">刑法高频条文</a>
+  <a href="#a-labor" class="sub">劳动 & 消费</a>
+  <a href="#a-proc" class="sub">程序与救济</a>
+  <a href="#s4">§4 立法权限与"法律保留"</a>
+  <a href="#s5">§5 备案审查与法律解释</a>
+  <a href="#s6">§6 法律责任体系速查</a>
+  <a href="#s7">§7 四大救济路径</a>
+  <a href="#s8">§8 实用工具</a>
+  <a href="#s9">§9 分卷入口</a>
+  <a href="#s10">§10 扩展路线图</a>
+  <a href="#src">§附录 原文核验</a>
+</nav>
+
+<main>
+
+<!-- ============ §0 骨架总览 ============ -->
+<section id="s0">
+  <h2><span class="idx">§0</span> 骨架总览 <span class="en">The Skeleton</span></h2>
+  <p class="sec-lead">理解中国法律，先记牢三张"地图"：<b>效力金字塔</b>（谁大谁小）、<b>七大部门法</b>（管什么）、<b>两条分类轴</b>（公法/私法、实体法/程序法）。后面所有条文都能挂在这张骨架上。</p>
+
+  <div class="viz">
+    <div class="fig-title">图 0-1 · 法律效力金字塔 <span>上位法优于下位法 · 越往上效力越高</span></div>
+    <div class="legend">
+      <span><i style="background:var(--c-const)"></i>宪法</span>
+      <span><i style="background:var(--c-civil)"></i>法律</span>
+      <span><i style="background:var(--c-admin)"></i>行政法规</span>
+      <span><i style="background:var(--c-econ)"></i>地方性法规</span>
+      <span><i style="background:var(--c-proc)"></i>规章</span>
+    </div>
+    <svg viewBox="0 0 820 350" role="img" aria-label="法律效力金字塔">
+      <!-- 宪法 -->
+      <polygon points="270,10 550,10 578,66 242,66" fill="#b3261e"/>
+      <text x="410" y="45" text-anchor="middle" fill="#fff" font-size="17" font-weight="700">宪法</text>
+      <text x="410" y="45" text-anchor="middle" fill="#fff" font-size="11" dy="16">全国人大制定 · 根本法 · 最高效力</text>
+      <!-- 法律 -->
+      <polygon points="242,72 578,72 610,128 210,128" fill="#2f4fd0"/>
+      <text x="410" y="104" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">法律</text>
+      <text x="410" y="104" text-anchor="middle" fill="#dde4fb" font-size="11" dy="15">全国人大及其常委会 · 如民法典、刑法</text>
+      <!-- 行政法规 -->
+      <polygon points="210,134 610,134 646,190 174,190" fill="#0d7f8c"/>
+      <text x="410" y="166" text-anchor="middle" fill="#fff" font-size="15.5" font-weight="700">行政法规</text>
+      <text x="410" y="166" text-anchor="middle" fill="#d3f0f3" font-size="11" dy="15">国务院 · 如《工伤保险条例》</text>
+      <!-- 地方性法规 -->
+      <polygon points="174,196 646,196 688,252 132,252" fill="#1f7a45"/>
+      <text x="410" y="228" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">地方性法规 · 自治条例 · 单行条例</text>
+      <text x="410" y="228" text-anchor="middle" fill="#d6efdf" font-size="11" dy="15">省级 / 设区市人大及其常委会</text>
+      <!-- 规章 -->
+      <polygon points="132,258 688,258 736,314 84,314" fill="#6a3fb5"/>
+      <text x="410" y="290" text-anchor="middle" fill="#fff" font-size="14.5" font-weight="700">规章（部门规章 · 地方政府规章）</text>
+      <text x="410" y="290" text-anchor="middle" fill="#e6dcf8" font-size="11" dy="15">国务院部委 · 省级/设区市政府</text>
+    </svg>
+    <p class="cap">读法：任何一条规定，先问"它出自哪一层"——层级决定了它的效力和能否被推翻。</p>
+  </div>
+
+  <h3>两条分类轴：一切法律的两个坐标</h3>
+  <div class="grid2">
+    <div class="card">
+      <div class="lbl">轴 1 · 公法 vs 私法</div>
+      <p style="margin-top:6px"><b>公法</b>＝国家管你（刑法、行政法、诉讼法）。特点是<b>强制、不可协商</b>，罚则由国家机关执行。</p>
+      <p><b>私法</b>＝你跟他之间（民法、商法）。特点是<b>平等、自愿、可协商</b>，"我的权利我做主"。</p>
+    </div>
+    <div class="card">
+      <div class="lbl">轴 2 · 实体法 vs 程序法</div>
+      <p style="margin-top:6px"><b>实体法</b>＝规定"你有什么权利、违法有什么后果"（民法典、刑法）。</p>
+      <p><b>程序法</b>＝规定"权利怎么实现、案子怎么打"（民事/刑事/行政诉讼法、仲裁法）。<b>实体权利靠程序落地。</b></p>
+    </div>
+  </div>
+
+  <div class="callout keypoint">
+    <span class="tag">一句话记住骨架</span>
+    <p style="margin:4px 0 0">法律效力像"金字塔"（宪法最高）；内容按"管什么"分七大专区；每条规则都能用两个坐标定位——<b>是谁跟谁的事（公/私）</b>、<b>是权利还是打法（实体/程序）</b>。</p>
+  </div>
+</section>
+
+<!-- ============ §1 效力层级 ============ -->
+<section id="s1">
+  <h2><span class="idx">§1</span> 法律效力层级与冲突规则 <span class="en">Hierarchy & Conflicts</span></h2>
+  <p class="sec-lead">生活里两个规定"打架"怎么办？靠这 4 条规则解决。这是法律学习的"底层算法"。</p>
+
+  <table>
+    <thead><tr><th>层级</th><th>制定机关</th><th>典型名称</th><th>举例</th></tr></thead>
+    <tbody>
+      <tr><td><b>宪法</b></td><td>全国人民代表大会</td><td>《宪法》</td><td>公民基本权利、国家机构</td></tr>
+      <tr><td><b>法律</b></td><td>全国人大 / 全国人大常委会</td><td>《XX法》</td><td>民法典、刑法、劳动合同法</td></tr>
+      <tr><td><b>行政法规</b></td><td>国务院</td><td>《XX条例》《XX规定》</td><td>工伤保险条例、道路交通安全法实施条例</td></tr>
+      <tr><td><b>地方性法规</b></td><td>省/自治区/直辖市、设区市人大</td><td>《XX省XX条例》</td><td>各地物业管理条例</td></tr>
+      <tr><td><b>部门规章</b></td><td>国务院各部委</td><td>《XX办法》《XX规定》</td><td>公安部、市场监管总局规章</td></tr>
+      <tr><td><b>地方政府规章</b></td><td>省级/设区市政府</td><td>《XX市XX办法》</td><td>各市政府规章</td></tr>
+    </tbody>
+  </table>
+
+  <h3>冲突适用四规则（背下来就能判断大多数"打架"）</h3>
+  <div class="grid2">
+    <div class="card"><b>① 上位法优于下位法</b><p style="color:var(--sub);font-size:14px;margin:6px 0 0">下位法与上位法抵触的，以上位法为准。例：地方条例不能违反《民法典》。</p></div>
+    <div class="card"><b>② 特别法优于一般法</b><p style="color:var(--sub);font-size:14px;margin:6px 0 0">同一层级，专门规定优先。例：产品质量问题，《食品安全法》优先于《产品质量法》一般规定。</p></div>
+    <div class="card"><b>③ 新法优于旧法</b><p style="color:var(--sub);font-size:14px;margin:6px 0 0">同一层级、同一事项，后法优先。例：《民法典》取代原《合同法》《物权法》。</p></div>
+    <div class="card"><b>④ 法不溯及既往（从旧兼从轻）</b><p style="color:var(--sub);font-size:14px;margin:6px 0 0">原则上新法不管旧事；但刑法上"新法更轻则从新"（有利于被告人）。</p></div>
+  </div>
+
+  <div class="callout analogy">
+    <span class="tag">类比 · 记住层级</span>
+    <p style="margin:4px 0 0">把法律体系想成一家公司：<b>宪法＝公司章程</b>，<b>法律＝董事会决议</b>，<b>行政法规＝总经理规定</b>，<b>地方性法规＝分公司细则</b>，<b>规章＝部门操作手册</b>。分公司细则和操作手册不能违反章程和董事会决议。</p>
+  </div>
+</section>
+
+<!-- ============ §2 七大部门法 ============ -->
+<section id="s2">
+  <h2><span class="idx">§2</span> 七大部门法 <span class="en">Seven Branches</span></h2>
+  <p class="sec-lead">中国现行法律体系按调整对象分成 <b>七大部门法</b>。这是"骨架的七根柱子"。带 <span class="chip todo" style="margin:0">＋</span> 的是本轮仅列名、后续逐卷展开的法律。</p>
+
+  <div class="grid4">
+    <div class="branch" style="--bc:var(--c-const)">
+      <h4><span class="dot"></span>一、宪法及宪法相关法</h4>
+      <div class="en">Constitutional Law</div>
+      <p>规定国家根本制度、公民基本权利与国家机构。</p>
+      <div class="chips">
+        <span class="chip">宪法</span><span class="chip">立法法</span><span class="chip">选举法</span>
+        <span class="chip">人大组织法</span><span class="chip">民族区域自治法</span>
+        <span class="chip chip todo">港澳基本法</span><span class="chip chip todo">国旗国徽国歌法</span>
+      </div>
+    </div>
+    <div class="branch" style="--bc:var(--c-civil)">
+      <h4><span class="dot"></span>二、民法商法</h4>
+      <div class="en">Civil & Commercial Law</div>
+      <p>调整平等主体之间的财产与人身关系，离生活最近的一卷。</p>
+      <div class="chips">
+        <span class="chip">民法典</span><span class="chip">公司法</span><span class="chip">证券法</span>
+        <span class="chip">著作权法</span><span class="chip chip todo">专利法</span>
+        <span class="chip chip todo">商标法</span><span class="chip chip todo">保险法</span>
+        <span class="chip chip todo">破产法</span><span class="chip chip todo">信托法</span>
+      </div>
+    </div>
+    <div class="branch" style="--bc:var(--c-admin)">
+      <h4><span class="dot"></span>三、行政法</h4>
+      <div class="en">Administrative Law</div>
+      <p>规范政府怎么管、管错了怎么救。</p>
+      <div class="chips">
+        <span class="chip">行政处罚法</span><span class="chip">行政许可法</span>
+        <span class="chip chip todo">行政强制法</span><span class="chip chip todo">治安管理处罚法</span>
+        <span class="chip chip todo">行政复议法</span><span class="chip chip todo">公务员法</span>
+      </div>
+    </div>
+    <div class="branch" style="--bc:var(--c-econ)">
+      <h4><span class="dot"></span>四、经济法</h4>
+      <div class="en">Economic Law</div>
+      <p>管市场秩序、宏观调控与国家干预经济。</p>
+      <div class="chips">
+        <span class="chip">反垄断法</span><span class="chip">反不正当竞争法</span>
+        <span class="chip chip todo">消费者权益保护法</span><span class="chip chip todo">产品质量法</span>
+        <span class="chip chip todo">税收征管法</span><span class="chip chip todo">环境保护法</span>
+      </div>
+    </div>
+    <div class="branch" style="--bc:var(--c-social)">
+      <h4><span class="dot"></span>五、社会法</h4>
+      <div class="en">Social Law</div>
+      <p>保护劳动者与弱势群体，打工人最该吃透的一卷。</p>
+      <div class="chips">
+        <span class="chip">劳动法</span><span class="chip">劳动合同法</span>
+        <span class="chip chip todo">社会保险法</span><span class="chip chip todo">未成年人保护法</span>
+        <span class="chip chip todo">妇女权益保障法</span><span class="chip chip todo">慈善法</span>
+      </div>
+    </div>
+    <div class="branch" style="--bc:var(--c-crim)">
+      <h4><span class="dot"></span>六、刑法</h4>
+      <div class="en">Criminal Law</div>
+      <p>什么行为是犯罪、要受什么刑罚（最严厉的一卷）。</p>
+      <div class="chips">
+        <span class="chip">刑法</span><span class="chip">（含 12 个修正案）</span>
+        <span class="chip chip todo">司法解释辑要</span>
+      </div>
+    </div>
+    <div class="branch" style="--bc:var(--c-proc)">
+      <h4><span class="dot"></span>七、诉讼与非诉讼程序法</h4>
+      <div class="en">Procedural Law</div>
+      <p>权利怎么实现、案子怎么打（打法手册）。</p>
+      <div class="chips">
+        <span class="chip">民事诉讼法</span><span class="chip">刑事诉讼法</span>
+        <span class="chip chip todo">行政诉讼法</span><span class="chip chip todo">仲裁法</span>
+        <span class="chip chip todo">人民调解法</span><span class="chip chip todo">法律援助法</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout keypoint">
+    <span class="tag">学习顺序建议</span>
+    <p style="margin:4px 0 0">普通人：<b>社会法（劳动）→ 民法商法（生活）→ 刑法（红线）→ 程序法（维权打法）</b>。想系统深入：<b>宪法（框架）→ 民法 → 刑法 → 行政法 → 程序法</b>，其余按需。</p>
+  </div>
+</section>
+
+<!-- ============ §3 重点条文精讲 ============ -->
+<section id="s3">
+  <h2><span class="idx">§3</span> 重点条文精讲（第一批 · 17 条） <span class="en">Key Provisions</span></h2>
+  <p class="sec-lead">每条按固定四段式拆解：<b>法条原文 → 大白话 → 生活场景 → 常见误区</b>。先看这 17 条，后面的按同样的模板持续补齐。</p>
+
+  <h3 id="a-civil">A · 民法典高频条文（离生活最近）</h3>
+
+  <!-- 好人条款 -->
+  <article class="art" style="--ac:#2f4fd0">
+    <header>
+      <div class="no">民法典 183 / 184</div>
+      <div><h4>好人条款：见义勇为、紧急救助不担责</h4>
+      <div class="src">第二编 总则编 · 民事责任</div></div>
+    </header>
+    <div class="body">
+      <div class="quote">
+        <b>第184条</b>　因自愿实施紧急救助行为造成受助人损害的，救助人不承担民事责任。<br>
+        <b>第183条</b>　因保护他人民事权益使自己受到损害的，由侵权人承担民事责任，受益人可以给予适当补偿；没有侵权人、侵权人逃逸或者无力承担民事责任，受害人请求补偿的，受益人应当给予适当补偿。
+      </div>
+      <div class="plain"><span class="tag">大白话</span>　路上有人晕倒，你敢上去救，就算按压不小心弄断了肋骨，也<b>不用赔</b>（184条）；你为了救别人自己受了伤，谁害的就找谁赔，找不到人、对方赔不起，受益人（被救的人）要给你补偿（183条）。</div>
+      <div class="scene"><span class="tag">生活场景</span>　老人倒地，路人做心肺复苏救回一命但压断肋骨——按 184 条，救助人免责，这就是为了让大家"敢救"。</div>
+      <div class="mis"><span class="tag">常见误区</span>　"好人条款"只保护<b>紧急、自愿、善意</b>的救助。若你是专业人士（医生）在非急救场合操作失误，或救助中另有重大过失损害，仍可能担责；它不等于"做了好事怎么都不用负责"。</div>
+    </div>
+  </article>
+
+  <!-- 高空抛物 -->
+  <article class="art" style="--ac:#2f4fd0">
+    <header>
+      <div class="no">民法典 1254</div>
+      <div><h4>高空抛物：找不到抛物人，物业和邻居也要担责</h4>
+      <div class="src">第七编 侵权责任编</div></div>
+    </header>
+    <div class="body">
+      <div class="quote">
+        禁止从建筑物中抛掷物品。从建筑物中抛掷物品或者从建筑物上坠落的物品造成他人损害的，由<b>侵权人依法承担侵权责任</b>；经调查难以确定具体侵权人的，除能够证明自己不是侵权人的外，由<b>可能加害的建筑物使用人给予补偿</b>。……物业服务企业等建筑物管理人应当采取必要的安全保障措施；未采取必要措施的，应当依法承担未履行安全保障义务的侵权责任。发生本条第一款规定的情形的，<b>公安等机关应当及时调查，查清责任人</b>。
+      </div>
+      <div class="plain"><span class="tag">大白话</span>　高空抛物砸到人：①能查出是谁扔的，谁赔全责；②查不出来，楼上<b>可能扔东西的人一起分摊补偿</b>（能证明不是自己的除外）；③物业没装监控、没做防护，也要担责；④公安必须介入调查。</div>
+      <div class="scene"><span class="tag">生活场景</span>　楼下玻璃被砸、人受伤，警察查不出具体住户——法院可能判决"可能加害的住户"共同补偿受害人，同时物业因未装高空监控承担部分责任。</div>
+      <div class="mis"><span class="tag">常见误区</span>　"找不到人我就没办法了"——错。新规下<b>公安机关有调查义务</b>，且实行"举证责任倒置"：被要求补偿的住户要自证清白。另外，抛物<b>还可能是犯罪</b>（高空抛物罪，刑法第291条之二）。</div>
+    </div>
+  </article>
+
+  <!-- 离婚冷静期 -->
+  <article class="art" style="--ac:#2f4fd0">
+    <header>
+      <div class="no">民法典 1077</div>
+      <div><h4>离婚冷静期：协议离婚要等 30 天</h4>
+      <div class="src">第五编 婚姻家庭编</div></div>
+    </header>
+    <div class="body">
+      <div class="quote">
+        自婚姻登记机关收到离婚登记申请之日起<b>三十日内</b>，任何一方不愿意离婚的，可以向婚姻登记机关撤回离婚登记申请。前款规定期限届满后<b>三十日内</b>，双方应当亲自到婚姻登记机关申请发给离婚证；未申请的，视为撤回离婚登记申请。
+      </div>
+      <div class="plain"><span class="tag">大白话</span>　去民政局办离婚：第1个 30 天是"后悔期"，<b>任何一方反悔都能撤回</b>；第2个 30 天内双方必须一起去领证，不去就<b>自动作废</b>，得重新申请。</div>
+      <div class="scene"><span class="tag">生活场景</span>　夫妻吵架去民政局申请离婚 → 冷静 30 天 → 这期间和好可撤回，或 30 天后再去领离婚证；两次都没走完流程就离不成。</div>
+      <div class="mis"><span class="tag">常见误区</span>　①冷静期<b>只管协议离婚</b>，一方起诉离婚（诉讼离婚）没有冷静期；②冷静期不是"强制和好期"；③涉及家暴等情形，建议直接走诉讼离婚更保护自己。</div>
+    </div>
+  </article>
+
+  <!-- 居住权 -->
+  <article class="art" style="--ac:#2f4fd0">
+    <header>
+      <div class="no">民法典 366</div>
+      <div><h4>居住权：可以让别人一辈子住在你房里</h4>
+      <div class="src">第二编 物权编 · 用益物权</div></div>
+    </header>
+    <div class="body">
+      <div class="quote">
+        居住权人有权按照合同约定，对他人的住宅享有<b>占有、使用</b>的用益物权，以满足生活居住的需要。……设立居住权，当事人应当采用<b>书面形式</b>订立居住权合同。……居住权<b>无偿设立</b>，但当事人另有约定的除外。设立居住权的，应当向登记机构申请<b>居住权登记</b>。居住权<b>不得转让、继承</b>。
+      </div>
+      <div class="plain"><span class="tag">大白话</span>　房子的主人可以给某人设一个"居住权"，让他在你的房里合法住下去（通常一辈子），这个权利<b>不用钱、不能卖、不能继承</b>，但<b>必须去登记才生效</b>。房子卖掉，新房东也得认。</div>
+      <div class="scene"><span class="tag">生活场景</span>　老人把房子过户给子女，同时给自己在房产证上登记一个"居住权"，这样即使子女将来卖房，老人仍能一直住在里面。</div>
+      <div class="mis"><span class="tag">常见误区</span>　①不登记 ＝ 没有居住权，只是普通的借住；②居住权只解决"住"，<b>不能出租获利</b>（另有约定除外）；③买房时务必查档，若房上挂了居住权，可能买到手也<b>不能赶人走</b>。</div>
+    </div>
+  </article>
+
+  <!-- 保证方式 -->
+  <article class="art" style="--ac:#2f4fd0">
+    <header>
+      <div class="no">民法典 686</div>
+      <div><h4>保证方式推定之变：默认"一般保证"</h4>
+      <div class="src">第三编 合同编 · 保证合同</div></div>
+    </header>
+    <div class="body">
+      <div class="quote">
+        保证的方式包括一般保证和连带责任保证。当事人在保证合同中对保证方式<b>没有约定或者约定不明确</b>的，按照<b>一般保证</b>承担保证责任。
+      </div>
+      <div class="plain"><span class="tag">大白话</span>　给人做担保，合同没写清是哪种担保时：<b>民法典之前默认"连带责任"</b>（债主可直接找担保人全额要钱）；<b>民法典之后默认"一般保证"</b>（债主必须先找欠债人，欠债人确实还不上，才轮到担保人）。</div>
+      <div class="scene"><span class="tag">生活场景</span>　你给朋友借钱签字担保却没写清方式——按新规你享"先诉抗辩权"，债主得先把朋友告了、执行不到钱，才能找你。担保风险被削了一层。</div>
+      <div class="mis"><span class="tag">常见误区</span>　①别以为担保一定"随便签签没事"——写清"连带责任保证"就回到最重的责任；②一般保证人的"先诉抗辩权"有例外（如债务人下落不明、破产等），不是绝对挡箭牌。</div>
+    </div>
+  </article>
+
+  <h3 id="a-crim">B · 刑法高频条文（红线与自我保护）</h3>
+
+  <!-- 正当防卫 -->
+  <article class="art" style="--ac:#7a1f2b">
+    <header>
+      <div class="no">刑法 20</div>
+      <div><h4>正当防卫：打不还手不再是"唯一正确"</h4>
+      <div class="src">总则编 · 犯罪排除事由</div></div>
+    </header>
+    <div class="body">
+      <div class="quote">
+        为了使国家、公共利益、本人或者他人的人身、财产和其他权利免受<b>正在进行</b>的不法侵害，而采取的制止不法侵害的行为，对不法侵害人造成损害的，属于正当防卫，<b>不负刑事责任</b>。<br>
+        正当防卫<b>明显超过必要限度造成重大损害</b>的，应当负刑事责任，但是应当减轻或者免除处罚。<br>
+        对正在进行<b>行凶、杀人、抢劫、强奸、绑架</b>以及其他严重危及人身安全的暴力犯罪，采取防卫行为，造成不法侵害人伤亡的，不属于防卫过当，<b>不负刑事责任</b>。
+      </div>
+      <div class="plain"><span class="tag">大白话</span>　别人正在打你、抢你，你反击保护自己，不算犯罪（第1款）。反击过头、明显超过必要限度打成重伤/死亡，要担责但可减轻（第2款）。遇到杀人、抢劫、强奸这类<b>严重暴力</b>，你把对方打死打伤也<b>不过当</b>（第3款，特殊防卫）。</div>
+      <div class="scene"><span class="tag">生活场景</span>　2018 年"昆山反杀案"：于海明被持刀追砍、夺刀反击致对方死亡，被认定为正当防卫、不予起诉——它推动了"法不能向不法让步"的司法态度。</div>
+      <div class="mis"><span class="tag">常见误区</span>　①对方<b>已停止侵害</b>（跑了、已经没威胁）你还追着打，可能变成故意伤害；②"谁死谁有理"已过时，认定看的是<b>当时情境 + 是否正在进行</b>；③防卫挑拨（故意激怒对方再反击）不算正当防卫。</div>
+    </div>
+  </article>
+
+  <!-- 危险驾驶 -->
+  <article class="art" style="--ac:#7a1f2b">
+    <header>
+      <div class="no">刑法 133 之一</div>
+      <div><h4>危险驾驶罪：醉驾是刑事案件</h4>
+      <div class="src">分则 · 危害公共安全罪</div></div>
+    </header>
+    <div class="body">
+      <div class="quote">
+        在道路上驾驶机动车，有下列情形之一的，处<b>拘役，并处罚金</b>：（一）<b>追逐竞驶</b>，情节恶劣的；（二）<b>醉酒驾驶</b>机动车的；（三）从事校车业务或者旅客运输，严重超过额定乘员载客，或者严重超过规定时速行驶的；（四）违反危险化学品安全管理规定运输危险化学品，危及公共安全的。
+      </div>
+      <div class="plain"><span class="tag">大白话</span>　醉酒开车本身就是犯罪，不管有没有撞到人。判定标准是血液酒精含量 <b>≥ 80mg/100ml</b>，处拘役（1–6 个月）并罚金。属于<b>故意犯罪</b>，会留案底。</div>
+      <div class="scene"><span class="tag">生活场景</span>　聚餐喝了两杯开车回家，被查到血液酒精 100mg/100ml——即便没出事，也构成危险驾驶罪，可能被判拘役、吊销驾照，还影响考公、入伍、出国签证。</div>
+      <div class="mis"><span class="tag">常见误区</span>　①"就开一小段" 不成立，只要在"道路"上就算；②20mg–80mg 之间是<b>饮酒驾驶</b>（行政处罚），≥80mg 才是<b>醉酒驾驶</b>（刑事）；③醉驾致人重伤/死亡可能升级为交通肇事罪，刑期大幅提高。</div>
+    </div>
+  </article>
+
+  <!-- 帮信罪 -->
+  <article class="art" style="--ac:#7a1f2b">
+    <header>
+      <div class="no">刑法 287 之二</div>
+      <div><h4>帮信罪：把银行卡"借"出去也可能坐牢</h4>
+      <div class="src">分则 · 妨害社会管理秩序罪</div></div>
+    </header>
+    <div class="body">
+      <div class="quote">
+        明知他人利用信息网络实施犯罪，为其犯罪提供互联网接入、服务器托管、网络存储、通讯传输等技术支持，或者提供<b>广告推广、支付结算</b>等帮助，<b>情节严重</b>的，处三年以下有期徒刑或者拘役，并处或者单处罚金。
+      </div>
+      <div class="plain"><span class="tag">大白话</span>　明知对方在搞网络诈骗/赌博，你还把<b>银行卡、手机卡、微信支付宝、服务器、推广渠道</b>借给他用或帮他收钱，情节严重的就构成<b>帮助信息网络犯罪活动罪</b>（简称"帮信罪"），最高三年。</div>
+      <div class="scene"><span class="tag">生活场景</span>　兼职"跑分""代收款"：有人让你提供银行卡帮人过账、给提成——这些卡常被用于电诈洗钱。一旦流水达到刑事标准，出借人就是共犯/帮信罪，近年大量大学生因此涉案。</div>
+      <div class="mis"><span class="tag">常见误区</span>　①"我只是借卡，又没骗人"——帮信罪打击的就是"帮忙的人"；②"我不知道对方犯罪"未必能脱责，<b>明显异常</b>（高额报酬、频繁过账）会被推定"明知"；③卡丢了不挂失、被人拿去过账，也可能担责。</div>
+    </div>
+  </article>
+
+  <h3 id="a-labor">C · 劳动 & 消费高频条文（打工人 / 消费者必知）</h3>
+
+  <!-- 试用期 -->
+  <article class="art" style="--ac:#b06a00">
+    <header>
+      <div class="no">劳动合同法 19</div>
+      <div><h4>试用期：最长 6 个月，且只能约定一次</h4>
+      <div class="src">社会法 · 劳动合同订立</div></div>
+    </header>
+    <div class="body">
+      <div class="quote">
+        劳动合同期限三个月以上不满一年的，试用期不得超过<b>一个月</b>；一年以上不满三年的，试用期不得超过<b>二个月</b>；三年以上固定期限和无固定期限的劳动合同，试用期不得超过<b>六个月</b>。<br>同一用人单位与同一劳动者<b>只能约定一次试用期</b>。以完成一定工作任务为期限的劳动合同或者劳动合同期限不满三个月的，不得约定试用期。试用期<b>包含在劳动合同期限内</b>。
+      </div>
+      <div class="plain"><span class="tag">大白话</span>　合同签多久，决定试用期多长（≤1/2/6 个月）；同一家公司对同一个人<b>只能试用一次</b>；只签 3 个月内的短合同<b>不能有试用期</b>；试用期是算在合同期里的，不能单独签"试用合同"。</div>
+      <div class="scene"><span class="tag">生活场景</span>　公司跟你签 3 年合同，却要求试用 8 个月——违法，超出 6 个月的部分应当按正式工资标准补足。试用期工资不得低于本单位同岗位最低档工资或约定工资的 <b>80%</b>，且不低于当地最低工资。</div>
+      <div class="mis"><span class="tag">常见误区</span>　①"试用期可以随便开人"——错，试用期解除也要有<b>法定理由</b>（不符合录用条件需有证据）；②试用期不缴社保是违法的；③试用期届满再签正式合同违法。</div>
+    </div>
+  </article>
+
+  <!-- 经济补偿 N/N+1/2N -->
+  <article class="art" style="--ac:#b06a00">
+    <header>
+      <div class="no">劳动合同法 47 / 87</div>
+      <div><h4>经济补偿 N / N+1 / 2N：被辞退到底赔多少</h4>
+      <div class="src">社会法 · 解除与终止</div></div>
+    </header>
+    <div class="body">
+      <div class="quote">
+        <b>第47条</b>　经济补偿按劳动者在本单位工作的年限，<b>每满一年支付一个月工资</b>。六个月以上不满一年的，按一年计算；不满六个月的，支付半个月工资。劳动者月工资高于用人单位所在地区上年度职工月平均工资<b>三倍</b>的，按三倍数额支付，支付年限<b>最高不超过十二年</b>。<br>
+        <b>第87条</b>　用人单位违反本法规定解除或者终止劳动合同的，应当依照本法第四十七条规定的经济补偿标准的<b>二倍</b>向劳动者支付赔偿金。
+      </div>
+      <div class="plain"><span class="tag">大白话</span>　被辞退能拿多少，看"谁的责任"：合法但无过错的解除 → 补偿 <b>N</b> 个月；没提前 30 天通知 → 再加 1 个月（<b>N+1</b>）；单位<b>违法解除</b> → 赔 <b>2N</b>。N ＝ 工作年限（满1年算1，≥6个月不满1年算1，<1年不足6个月算0.5）。</div>
+      <div class="scene"><span class="tag">生活场景</span>　工作 3 年半、月均工资 1 万，被公司违法辞退：N＝4（满 3 年算 3，余 6 个月以上再算 1），2N ＝ 8 个月工资 ≈ 8 万元。用下方 §8 计算器可一键算。</div>
+      <div class="mis"><span class="tag">常见误区</span>　①<b>主动辞职一般没有补偿</b>（除非是"被迫解除"，如拖欠工资、未缴社保）；②"高薪封顶"：月薪超当地社平 3 倍的，基数封顶、年限封顶 12 年；③N 和 2N <b>不能同时主张</b>，违法解除主张 2N 后不再要 N。</div>
+    </div>
+  </article>
+
+  <!-- 加班费 -->
+  <article class="art" style="--ac:#b06a00">
+    <header>
+      <div class="no">劳动法 44</div>
+      <div><h4>加班费：1.5 倍 / 2 倍 / 3 倍怎么算</h4>
+      <div class="src">社会法 · 工作时间和休息休假</div></div>
+    </header>
+    <div class="body">
+      <div class="quote">
+        有下列情形之一的，用人单位应当按照下列标准支付高于劳动者正常工作时间工资的工资报酬：（一）安排劳动者<b>延长工作时间</b>的，支付不低于工资的<b>150%</b>；（二）<b>休息日</b>安排工作又不能安排补休的，支付不低于<b>200%</b>；（三）<b>法定休假日</b>安排工作的，支付不低于<b>300%</b>。
+      </div>
+      <div class="plain"><span class="tag">大白话</span>　三种加班三档价：<b>工作日延时 1.5 倍</b>；<b>周末加班 2 倍</b>（能补休可不给钱）；<b>法定节假日 3 倍</b>（不能用补休替代）。计算基准 ＝ 月工资 ÷ 21.75（月计薪天数）。</div>
+      <div class="scene"><span class="tag">生活场景</span>　月薪 8000，国庆（法定假日）加班 8 小时：小时工资 ＝ 8000÷21.75÷8 ≈ 46 元，3 倍 ≈ 138 元/小时，8 小时 ≈ 1104 元。用 §8 计算器可直接算。</div>
+      <div class="mis"><span class="tag">常见误区</span>　①法定节假日加班<b>必须给 3 倍工资，不能用调休代替</b>；②"综合工时/不定时工时"需经审批，未审批的仍按标准算；③自愿加班（非单位安排）不一定能主张加班费，但<b>单位安排的</b>可以。</div>
+    </div>
+  </article>
+
+  <!-- 消保法 假一赔三 -->
+  <article class="art" style="--ac:#1f7a45">
+    <header>
+      <div class="no">消费者权益保护法 55</div>
+      <div><h4>假一赔三：最低赔 500 元</h4>
+      <div class="src">经济法 · 消费者保护</div></div>
+    </header>
+    <div class="body">
+      <div class="quote">
+        经营者提供商品或者服务有<b>欺诈行为</b>的，应当按照消费者的要求增加赔偿其受到的损失，增加赔偿的金额为消费者购买商品的价款或者接受服务的费用的<b>三倍</b>；<b>不足五百元的，为五百元</b>。法律另有规定的，依照其规定。
+      </div>
+      <div class="plain"><span class="tag">大白话</span>　商家欺诈（假货、虚假宣传、以次充好）→ 退货款 + 再赔 <b>价款 3 倍</b>；3 倍不足 500 元的按 500 元赔。注意是"<b>欺诈</b>"才触发，普通质量问题不一定。</div>
+      <div class="scene"><span class="tag">生活场景</span>　花 300 元买到标注"纯羊毛"实为化纤的毛衣（欺诈）→ 可要求退 300 + 赔 3×300＝900 元。花 100 元买到假货 → 3 倍仅 300，不足 500，按 500 赔。</div>
+      <div class="mis"><span class="tag">常见误区</span>　①必须是<b>欺诈</b>，单纯的"质量瑕疵"走修理/退换，不必然 3 倍；②食品领域另有更高惩罚性赔偿（见下条）；③知假买假能否获赔，实践中因领域而异（食品、药品领域通常仍支持）。</div>
+    </div>
+  </article>
+
+  <!-- 食安法 十倍 -->
+  <article class="art" style="--ac:#1f7a45">
+    <header>
+      <div class="no">食品安全法 148</div>
+      <div><h4>食品十倍赔偿：最低赔 1000 元</h4>
+      <div class="src">经济法 · 食品安全</div></div>
+    </header>
+    <div class="body">
+      <div class="quote">
+        生产不符合食品安全标准的食品或者经营<b>明知</b>是不符合食品安全标准的食品，消费者除要求赔偿损失外，还可以向生产者或者经营者要求支付<b>价款十倍或者损失三倍</b>的赔偿金；增加赔偿的金额<b>不足一千元的，为一千元</b>。
+      </div>
+      <div class="plain"><span class="tag">大白话</span>　买到不符合安全标准的食品（过期、变质、非法添加等），可要求"<b>价款 10 倍</b>"或"<b>损失 3 倍</b>"择高，最低 <b>1000 元</b>。比消保法的 3 倍/500 元更狠。</div>
+      <div class="scene"><span class="tag">生活场景</span>　花 15 元买到过期牛奶 → 10 倍仅 150 元，不足 1000，按 <b>1000 元</b>赔。这就是"<b>小额食品维权反而赔得多</b>"的原因。</div>
+      <div class="mis"><span class="tag">常见误区</span>　①经营者的适用前提是"<b>明知</b>"（进货查验、过期仍售等可推定明知），生产者则是"生产不符合标准"即可；②1000 元是<b>保底</b>不是上限，价款 10 倍更高时按高的算；③要保留购物凭证、商品实物、检测报告等证据。</div>
+    </div>
+  </article>
+
+  <h3 id="a-proc">D · 程序与救济高频条文（打官司、找政府必知）</h3>
+
+  <!-- 网购七日无理由退货 -->
+  <article class="art" style="--ac:#1f7a45">
+    <header><div class="no">消费者权益保护法 25</div>
+      <div><h4>网购七日无理由退货：拆封也能退（部分商品除外）</h4>
+      <div class="src">经济法 · 消费者保护</div></div>
+    </header>
+    <div class="body">
+      <div class="quote">
+        经营者采用网络、电视、电话、邮购等方式销售商品，消费者有权自收到商品之日起<b>七日内退货，且无需说明理由</b>，但下列商品除外：（一）消费者定作的；（二）鲜活易腐的；（三）在线下载或者消费者拆封的音像制品、计算机软件等数字化商品；（四）交付的报纸、期刊。除前款所列商品外，其他根据商品性质并经消费者在购买时确认不宜退货的商品，不适用无理由退货。消费者退货的商品应当完好。经营者应当自收到退回商品之日起<b>七日内</b>返还消费者支付的商品价款。退回商品的运费由消费者承担；经营者和消费者另有约定的，按照约定。
+      </div>
+      <div class="plain"><span class="tag">大白话</span>　网购/电视购物等，收到货<b>7 天内可无理由退</b>；四种商品（定作、鲜活易腐、拆封的数字化商品、报刊）除外；退货商品应完好，退款应在收到退货后 7 天内到账，运费一般由消费者出。</div>
+      <div class="scene"><span class="tag">生活场景</span>　网购的衣服不合身，7 天内可无理由寄回；而"订制的生日蛋糕""拆封下载的软件"则不能无理由退。</div>
+      <div class="mis"><span class="tag">常见误区</span>　①第25条是"<b>无理由</b>"退货，与第24条"<b>有质量问题</b>退货"不同——质量问题退货时运费由经营者承担；②"商品完好"不等于"不能拆封查验"，正常拆封验货不影响退货权。</div>
+    </div>
+  </article>
+
+  <!-- 未签合同二倍工资 -->
+  <article class="art" style="--ac:#b06a00">
+    <header><div class="no">劳动合同法 10 / 82</div>
+      <div><h4>不签书面劳动合同：从第二个月起付二倍工资</h4>
+      <div class="src">社会法 · 劳动合同订立</div></div>
+    </header>
+    <div class="body">
+      <div class="quote">
+        <b>第10条</b>　建立劳动关系，应当订立书面劳动合同。已建立劳动关系，未同时订立书面劳动合同的，应当自用工之日起一个月内订立书面劳动合同。用人单位与劳动者在用工前订立劳动合同的，劳动关系自用工之日起建立。<br>
+        <b>第82条</b>　用人单位自用工之日起<b>超过一个月不满一年</b>未与劳动者订立书面劳动合同的，应当向劳动者<b>每月支付二倍的工资</b>。用人单位违反本法规定不与劳动者订立无固定期限劳动合同的，自应当订立无固定期限劳动合同之日起向劳动者每月支付二倍的工资。
+      </div>
+      <div class="plain"><span class="tag">大白话</span>　用工后应在一个月内签书面合同；超过一个月还不签，从第二个月起要<b>每月发两倍工资</b>（最多 11 个月）。该签无固定期限合同却不签的，也要付二倍工资。</div>
+      <div class="scene"><span class="tag">生活场景</span>　入职后公司一直拖着不签合同，满一个月后你可主张未签合同期间的二倍工资差额；注意留存工资流水、考勤、聊天记录等证明用工事实。</div>
+      <div class="mis"><span class="tag">常见误区</span>　①主张二倍工资属劳动争议，须先经劳动仲裁，且受<b>1 年仲裁时效</b>约束；②"二倍工资"是在已发工资基础上的<b>差额</b>（即再补一倍），不是总共只发一倍。</div>
+    </div>
+  </article>
+
+  <!-- 打官司：管辖与举证 -->
+  <article class="art" style="--ac:#6a3fb5">
+    <header><div class="no">民事诉讼法 22 / 67</div>
+      <div><h4>打官司先看两件事：去哪个法院、谁来举证</h4>
+      <div class="src">程序法 · 管辖与证据</div></div>
+    </header>
+    <div class="body">
+      <div class="quote">
+        <b>第22条（一般地域管辖）</b>　对公民提起的民事诉讼，由<b>被告住所地</b>人民法院管辖；被告住所地与经常居住地不一致的，由经常居住地人民法院管辖。对法人或者其他组织提起的民事诉讼，由被告住所地人民法院管辖。……<br>
+        <b>第67条（举证责任）</b>　当事人对自己提出的主张，<b>有责任提供证据</b>。当事人及其诉讼代理人因客观原因不能自行收集的证据，或者人民法院认为审理案件需要的证据，人民法院应当调查收集。人民法院应当按照法定程序，全面地、客观地审查核实证据。
+      </div>
+      <div class="plain"><span class="tag">大白话</span>　"<b>原告就被告</b>"：一般起诉要到被告住所地（或其经常居住地）法院。举证遵循"<b>谁主张、谁举证</b>"，自己收集证据有困难的，可申请法院调查收集。</div>
+      <div class="scene"><span class="tag">生活场景</span>　你要起诉外地欠钱的人，通常得去对方住所地法院立案；主张对方违约，就要自己拿出合同、转账记录、聊天记录来证明。</div>
+      <div class="mis"><span class="tag">常见误区</span>　①并非所有案件都"原告就被告"，合同履行地、侵权行为地等也有管辖权；②"谁主张谁举证"有例外（如环境污染、产品责任等存在举证责任转移/倒置）。</div>
+    </div>
+  </article>
+
+  <!-- 行政复议 60 日 -->
+  <article class="art" style="--ac:#0d7f8c">
+    <header><div class="no">行政复议法 20 / 23</div>
+      <div><h4>不服行政行为：60 日内可申请复议</h4>
+      <div class="src">行政法 · 行政复议</div></div>
+    </header>
+    <div class="body">
+      <div class="quote">
+        <b>第20条</b>　公民、法人或者其他组织认为行政行为侵犯其合法权益的，可以自知道或者应当知道该行政行为之日起<b>六十日内</b>提出行政复议申请；但是法律规定的申请期限超过六十日的除外。因不可抗力或者其他正当理由耽误法定申请期限的，申请期限自障碍消除之日起继续计算。行政机关作出行政行为时，未告知……申请行政复议的权利、行政复议机关和申请期限的，申请期限自……知道或者应当知道……之日起计算，但是自知道或者应当知道行政行为内容之日起<b>最长不得超过一年</b>。<br>
+        <b>第23条</b>　有下列情形之一的，申请人应当<b>先向行政复议机关申请行政复议</b>，对行政复议决定不服的，可以再依法向人民法院提起行政诉讼：（一）对当场作出的行政处罚决定不服；（二）对行政机关作出的侵犯其已经依法取得的自然资源的所有权或者使用权的决定不服……
+      </div>
+      <div class="plain"><span class="tag">大白话</span>　不服行政行为，一般要在<b>60 日内</b>申请行政复议；机关没告知你复议权利的，最长可放宽到从知道行政行为内容起<b>1 年</b>。部分情形是"<b>复议前置</b>"——必须先复议才能起诉。</div>
+      <div class="scene"><span class="tag">生活场景</span>　被当场罚款、不服土地权属处理决定，属于复议前置情形，要先走行政复议；其他多数行政行为，复议与诉讼可择一，但复议更快捷、不收费。</div>
+      <div class="mis"><span class="tag">常见误区</span>　①"复议就没收诉讼权"——除前置情形外，一般复议后仍可起诉；②60 日是自然日而非工作日，别按工作日算；③错过期限且无正当理由，可能丧失救济机会。</div>
+    </div>
+  </article>
+
+</section>
+
+<!-- ============ §4 立法权限与"法律保留" ============ -->
+<section id="s4">
+  <h2><span class="idx">§4</span> 立法权限与"法律保留" <span class="en">Reserved Matters</span></h2>
+  <p class="sec-lead">哪些事只能由"法律"（全国人大及其常委会）来定，行政法规、地方性法规不能碰？这条边界叫"<b>法律保留</b>"，写在《立法法》第11条。它是整个效力金字塔的"负向清单"。</p>
+
+  <article class="art" style="--ac:#2f4fd0">
+    <header><div class="no">立法法 第11条</div>
+      <div><h4>只能制定法律的 11 类事项（法律保留）</h4><div class="src">第二章 法律 · 第一节 立法权限</div></div></header>
+    <div class="body">
+      <div class="quote">下列事项只能制定法律：（一）国家主权的事项；（二）各级人民代表大会、人民政府、监察委员会、人民法院和人民检察院的产生、组织和职权；（三）民族区域自治制度、特别行政区制度、基层群众自治制度；（四）犯罪和刑罚；（五）对公民政治权利的剥夺、限制人身自由的强制措施和处罚；（六）税种的设立、税率的确定和税收征收管理等税收基本制度；（七）对非国有财产的征收、征用；（八）民事基本制度；（九）基本经济制度以及财政、海关、金融和外贸的基本制度；（十）诉讼制度和仲裁基本制度；（十一）必须由全国人民代表大会及其常务委员会制定法律的其他事项。</div>
+      <div class="plain"><span class="tag">大白话</span>　这 11 类事"门槛最高"，只能由全国人大或其常委会制定<b>法律</b>来规定，行政法规、地方性法规、规章一律不能抢先定。尤其"犯罪和刑罚""限制人身自由的处罚""税收基本制度""对非国有财产的征收征用"——直接关系你的自由与财产，必须走最高规格。</div>
+      <div class="scene"><span class="tag">生活场景</span>　"什么行为算犯罪、罚款怎么设、要不要交某种税"——不能由某部门规章或某地条例自行创设，否则就越权了。</div>
+      <div class="mis"><span class="tag">常见误区</span>　①"地方可以自己设一项新税"——错，税种设立属法律保留；②"部门规章能规定限制人身自由"——错，这属第（五）项，只能由法律规定。</div>
+    </div>
+  </article>
+
+  <div class="grid2">
+    <div class="card"><div class="lbl">授权立法：例外怎么开</div>
+      <p style="font-size:14px;margin-top:6px">第11条事项尚未制定法律的，全国人大及其常委会有权决定<b>授权国务院</b>先制定行政法规；但<b>犯罪和刑罚、对公民政治权利的剥夺和限制人身自由的强制措施和处罚、司法制度</b>等事项<b>不得授权</b>（立法法第12条）。</p></div>
+    <div class="card"><div class="lbl">授权不是"一授了之"</div>
+      <p style="font-size:14px;margin-top:6px">授权应明确目的、事项、范围、期限；<b>期限一般不超过五年</b>；被授权机关不得转授权（立法法第13、15条）。条件成熟时，应及时制定法律（第14条）。</p></div>
+  </div>
+
+  <div class="callout keypoint"><span class="tag">为什么"法律保留"跟你我有关</span>
+    <p style="margin:4px 0 0">如果有人拿"规章""红头文件"来限制你的人身自由、加重你的纳税义务、处分你的财产，可以反问一句：<b>这件事是不是"只能制定法律"的事项？</b>越权的下位规定，可通过备案审查纠正（见 §5）。</p></div>
+</section>
+
+<!-- ============ §5 效力冲突、法律解释与备案审查 ============ -->
+<section id="s5">
+  <h2><span class="idx">§5</span> 效力冲突、法律解释与备案审查 <span class="en">Conflicts &amp; Review</span></h2>
+  <p class="sec-lead">§1 讲了四条"冲突适用口诀"，这里补上它们的法律出处，并回答两个高频问题：<b>法律解释谁说了算</b>、<b>问题规定怎么被纠正</b>。</p>
+
+  <h3>一、效力等级与冲突规则的"法条出处"</h3>
+  <div class="tw"><table>
+    <thead><tr><th>规则</th><th>内容</th><th>条款（立法法）</th></tr></thead>
+    <tbody>
+      <tr><td>宪法最高</td><td>一切法律、行政法规、地方性法规、自治条例和单行条例、规章都不得同宪法相抵触</td><td class="n">第98条</td></tr>
+      <tr><td>上位法优于下位法</td><td>法律 &gt; 行政法规 &gt; 地方性法规；地方性法规 &gt; 本级和下级地方政府规章</td><td class="n">第99、100条</td></tr>
+      <tr><td>特别法优于一般法 / 新法优于旧法</td><td>同一机关制定的规定，特别规定优先；新的规定优先</td><td class="n">第103条</td></tr>
+      <tr><td>不溯及既往</td><td>一般不溯及既往，但为更好保护权利利益的特别规定除外</td><td class="n">第104条</td></tr>
+      <tr><td>冲突裁决</td><td>法律之间新的一般规定与旧的特别规定不一致、不能确定如何适用时，由<b>全国人大常委会裁决</b></td><td class="n">第105条</td></tr>
+      <tr><td>地方/部门规定冲突</td><td>地方性法规与部门规章不一致时，由国务院提出意见，必要时提请全国人大常委会裁决</td><td class="n">第106条</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>二、法律解释：谁说了算</h3>
+  <article class="art" style="--ac:#2f4fd0">
+    <header><div class="no">立法法 第48 / 53 条</div>
+      <div><h4>法律解释权属于全国人大常委会</h4><div class="src">第二章 法律 · 第四节 法律解释</div></div></header>
+    <div class="body">
+      <div class="quote">
+        <b>第48条</b>　法律解释权属于全国人民代表大会常务委员会。法律有以下情况之一的，由全国人民代表大会常务委员会解释：（一）法律的规定需要进一步明确具体含义的；（二）法律制定后出现新的情况，需要明确适用法律依据的。<br>
+        <b>第53条</b>　全国人民代表大会常务委员会的法律解释同法律具有同等效力。
+      </div>
+      <div class="plain"><span class="tag">大白话</span>　"法律到底什么意思"，权威解释权在全国人大常委会；它的解释<b>与法律本身同等效力</b>。这不同于最高法、最高检的"司法解释"——后者是审判、检察工作中具体应用法律的解释。</div>
+      <div class="scene"><span class="tag">生活场景</span>　当一条法律出现理解分歧或新情况没有明确依据时，可由国务院、中央军委、国家监察委员会、最高法、最高检、全国人大各专门委员会及省级人大常委会提出<b>法律解释要求</b>（第49条）。</div>
+      <div class="mis"><span class="tag">常见误区</span>　①"法律解释"（立法解释）和"司法解释"是两回事，前者效力等同于法律；②司法解释应针对具体法律条文、符合立法目的，并自公布之日起三十日内报全国人大常委会备案（第119条）。</div>
+    </div>
+  </article>
+
+  <h3>三、备案审查：一份规定怎么被"体检"</h3>
+  <div class="viz">
+    <div class="fig-title">图 5-1 · 备案审查流程 <span>立法法 第109–113条</span></div>
+    <div class="flow">
+      <div class="fnode"><b>① 公布后 30 日内报备案</b><span>行政法规、地方性法规、自治条例和单行条例、规章，应当在公布后的三十日内报有关机关备案（第109条）。</span></div>
+      <div class="farrow">▼</div>
+      <div class="fsplit">
+        <div class="fnode" style="border-left-color:var(--c-const)"><b>②A 审查要求</b><span>国务院、中央军委、国家监察委员会、最高法、最高检、省级人大常委会等，认为与宪法或法律相抵触，可<b>书面提出审查要求</b>（第110条第1款）。</span></div>
+        <div class="fnode" style="border-left-color:var(--c-admin)"><b>②B 审查建议</b><span>其他国家机关、社会团体、企业事业组织以及<b>公民</b>，可<b>书面提出审查建议</b>（第110条第2款）。</span></div>
+      </div>
+      <div class="farrow">▼</div>
+      <div class="fnode" style="border-left-color:var(--c-proc)"><b>③ 审查、提出意见</b><span>由全国人大有关专门委员会和常委会工作机构审查；可主动审查、专项审查（第110、111条）。</span></div>
+      <div class="farrow">▼</div>
+      <div class="fnode" style="border-left-color:var(--c-social)"><b>④ 书面审查意见 → 两个月内反馈</b><span>认为抵触或存在合宪性、合法性问题的，向制定机关提出书面审查意见；制定机关应在两个月内研究提出是否修改或废止的意见并反馈（第112条）。</span></div>
+      <div class="farrow">▼</div>
+      <div class="fnode" style="border-left-color:var(--c-crim)"><b>⑤ 改则终止，不改则撤销</b><span>按意见修改、废止的，审查终止；拒不改正且需撤销的，报委员长会议提请<b>常委会会议审议决定予以撤销</b>；审查情况按要求反馈并可向社会公开（第112、113条）。</span></div>
+    </div>
+    <p class="cap">想深入了解公民如何提"审查建议"，见<a href="constitution.html">宪法卷</a> §9。</p>
+  </div>
+</section>
+
+<!-- ============ §6 法律责任体系速查 ============ -->
+<section id="s6">
+  <h2><span class="idx">§6</span> 法律责任体系速查 <span class="en">Liabilities</span></h2>
+  <p class="sec-lead">同一个行为，可能同时触发不止一种责任。看懂"四类责任"的区别，就知道该找谁、会承担什么后果。</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>责任类型</th><th>谁承担</th><th>典型后果</th><th>谁来追究</th></tr></thead>
+    <tbody>
+      <tr><td><b>民事</b>责任</td><td>平等主体的个人/单位（对另一方）</td><td>停止侵害、赔偿损失、支付违约金等</td><td>权利人起诉/仲裁，法院、仲裁机构</td></tr>
+      <tr><td><b>行政</b>责任</td><td>违法的公民/单位（对国家）</td><td>警告、罚款、拘留、吊销证照等</td><td>行政机关依法处罚</td></tr>
+      <tr><td><b>刑事</b>责任</td><td>犯罪的个人/单位（对国家）</td><td>五种主刑 + 罚金、剥夺政治权利、没收财产</td><td>检察院公诉、法院判决</td></tr>
+      <tr><td><b>国家赔偿</b></td><td>国家机关（对受害公民/单位）</td><td>支付赔偿金、返还财产、恢复原状等</td><td>赔偿义务机关、法院赔偿委员会</td></tr>
+    </tbody>
+  </table></div>
+
+  <article class="art" style="--ac:#2f4fd0">
+    <header><div class="no">民法典 第179条</div>
+      <div><h4>民事责任有 11 种承担方式，可单独也可合并</h4><div class="src">第一编 总则 · 民事责任</div></div></header>
+    <div class="body">
+      <div class="quote">承担民事责任的方式主要有：（一）停止侵害；（二）排除妨碍；（三）消除危险；（四）返还财产；（五）恢复原状；（六）修理、重作、更换；（七）继续履行；（八）赔偿损失；（九）支付违约金；（十）消除影响、恢复名誉；（十一）赔礼道歉。法律规定惩罚性赔偿的，依照其规定。本条规定的承担民事责任的方式，可以单独适用，也可以合并适用。</div>
+      <div class="plain"><span class="tag">大白话</span>　民事责任不只有"赔钱"，还有停止侵害、恢复原状、赔礼道歉等 11 种；几种方式可以一起用（如既赔钱又道歉）。"惩罚性赔偿"要<b>法律特别规定</b>才有（如消保法假一赔三、食安法十倍）。</div>
+      <div class="scene"><span class="tag">生活场景</span>　邻居违建挡光：可请求"排除妨碍＋赔偿损失"；被网络造谣：可请求"停止侵害＋消除影响、恢复名誉＋赔礼道歉＋赔偿损失"。</div>
+      <div class="mis"><span class="tag">常见误区</span>　①赔偿责任一般"填平损失"而非惩罚，惩罚性赔偿是例外；②"赔礼道歉"也是法定责任方式之一，不履行可申请法院强制执行。</div>
+    </div>
+  </article>
+
+  <div class="grid2">
+    <article class="art" style="--ac:#0d7f8c;margin-top:20px">
+      <header><div class="no">行政处罚法 第9条</div>
+        <div><h4>行政处罚的六类种类</h4><div class="src">行政法 · 处罚的种类和设定</div></div></header>
+      <div class="body">
+        <div class="quote">行政处罚的种类：（一）警告、通报批评；（二）罚款、没收违法所得、没收非法财物；（三）暂扣许可证件、降低资质等级、吊销许可证件；（四）限制开展生产经营活动、责令停产停业、责令关闭、限制从业；（五）行政拘留；（六）法律、行政法规规定的其他行政处罚。</div>
+        <div class="plain"><span class="tag">大白话</span>　从最轻的"警告"到最重的"行政拘留"，行政处罚分六类。"行政拘留"属限制人身自由，只能由法律设定。</div>
+        <div class="scene"><span class="tag">生活场景</span>　违章停车被罚款（第（二）类）、餐馆卫生不达标被责令停产停业（第（四）类）、寻衅滋事被行政拘留（第（五）类），法律后果各不相同。</div>
+        <div class="mis"><span class="tag">常见误区</span>　罚款与罚金不同：<b>罚款</b>是行政处罚，<b>罚金</b>是刑罚；行政拘留与刑事拘留、司法拘留也不同。</div>
+      </div>
+    </article>
+
+    <article class="art" style="--ac:#7a1f2b;margin-top:20px">
+      <header><div class="no">刑法 第33 / 34 条</div>
+        <div><h4>刑罚的种类：五种主刑 + 三种附加刑</h4><div class="src">总则 · 刑罚的种类</div></div></header>
+      <div class="body">
+        <div class="quote">
+          <b>第33条（主刑）</b>　管制；拘役；有期徒刑；无期徒刑；死刑。<br>
+          <b>第34条（附加刑）</b>　罚金；剥夺政治权利；没收财产。附加刑也可以独立适用。
+        </div>
+        <div class="plain"><span class="tag">大白话</span>　主刑 5 种（由轻到重：管制→拘役→有期徒刑→无期徒刑→死刑）；附加刑 3 种（罚金、剥夺政治权利、没收财产），附加刑也能单独适用。一个罪只能判一个主刑。</div>
+        <div class="scene"><span class="tag">生活场景</span>　醉驾（危险驾驶罪）通常判"拘役＋罚金"——拘役是主刑，罚金是附加刑，二者可以并科。</div>
+        <div class="mis"><span class="tag">常见误区</span>　"罚金"须上缴国库，不同于民事上的"违约金""赔偿金"（赔给受害人）；"没收财产"没收的是个人合法财产的一部分或全部，与"没收违法所得"不同。</div>
+      </div>
+    </article>
+  </div>
+
+  <div class="callout danger"><span class="tag">一事不再罚（罚款）</span>
+    <p style="margin:4px 0 0">行政处罚法第29条：对当事人的<b>同一个违法行为，不得给予两次以上罚款</b>的行政处罚。同一个违法行为违反多个法律规范应当给予罚款处罚的，<b>按照罚款数额高的规定处罚</b>。</p></div>
+</section>
+
+<!-- ============ §7 四大救济路径 ============ -->
+<section id="s7">
+  <h2><span class="idx">§7</span> 四大救济路径 <span class="en">Remedies</span></h2>
+  <p class="sec-lead">权利被侵害，走哪条路？先看"对手是谁"：对手是平等主体→民事；对手是行政机关→行政；涉及犯罪→刑事；国家机关行使职权致损→国家赔偿。</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>路径</th><th>典型触发</th><th>怎么走</th><th>关键期限</th></tr></thead>
+    <tbody>
+      <tr><td><b>民事</b></td><td>对方不还钱、违约、侵权</td><td>协商 → 调解 → 起诉 / 仲裁</td><td>诉讼时效 <b>3 年</b>（民法典188条）</td></tr>
+      <tr><td><b>行政</b></td><td>不服处罚、许可、征收等行政行为</td><td>行政复议 → 行政诉讼（部分需复议前置）</td><td>复议 <b>60 日</b>（行政复议法20条）；起诉 6 个月</td></tr>
+      <tr><td><b>刑事</b></td><td>涉嫌犯罪（受害一方）</td><td>报案 → 立案侦查 → 公诉 → 审判</td><td>追诉时效 5/10/15/20 年（刑法87条）</td></tr>
+      <tr><td><b>国家赔偿</b></td><td>国家机关行使职权致人身/财产损害</td><td>先向赔偿义务机关申请 → 复议 / 法院赔偿委员会</td><td>请求时效 <b>2 年</b>（国家赔偿法39条）</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="viz">
+    <div class="fig-title">图 7-1 · 一张图选对救济路径 <span>先判断"对手"是谁</span></div>
+    <div class="flow">
+      <div class="fnode"><b>对方是平等主体（个人、公司）</b><span>走 <b>民事</b>：协商 → 人民调解 → 民事诉讼 / 商事仲裁。劳动争议另有"先仲裁"程序。</span></div>
+      <div class="farrow">▼</div>
+      <div class="fnode" style="border-left-color:var(--c-admin)"><b>对方是行政机关及其行为</b><span>走 <b>行政</b>：先看能否/需否复议 → 行政复议（60 日）或直接行政诉讼（6 个月）；赔偿可一并或单独提出。</span></div>
+      <div class="farrow">▼</div>
+      <div class="fnode" style="border-left-color:var(--c-crim)"><b>涉及犯罪行为</b><span>走 <b>刑事</b>：向公安报案 → 侦查 → 检察院审查起诉 → 法院审判；受害人可提<b>附带民事诉讼</b>。</span></div>
+      <div class="farrow">▼</div>
+      <div class="fnode" style="border-left-color:#c0342b"><b>国家机关行使职权造成损害</b><span>走 <b>国家赔偿</b>：先向赔偿义务机关申请，逾期或不服再复议 / 向法院赔偿委员会申请（2 年时效）。</span></div>
+    </div>
+    <p class="cap">提示：同一个事件可能"多路并行"——如被打伤可同时追究对方刑事（故意伤害）、行政（治安处罚）与民事（赔偿）责任。</p>
+  </div>
+
+  <div class="grid2">
+    <article class="art" style="--ac:#7a1f2b;margin-top:20px">
+      <header><div class="no">刑法 第87条</div>
+        <div><h4>追诉时效：过了期限一般不再追诉</h4><div class="src">总则 · 时效</div></div></header>
+      <div class="body">
+        <div class="quote">犯罪经过下列期限不再追诉：（一）法定最高刑为不满五年有期徒刑的，经过五年；（二）法定最高刑为五年以上不满十年有期徒刑的，经过十年；（三）法定最高刑为十年以上有期徒刑的，经过十五年；（四）法定最高刑为无期徒刑、死刑的，经过二十年。如果二十年以后认为必须追诉的，须报请最高人民检察院核准。</div>
+        <div class="plain"><span class="tag">大白话</span>　追诉时效看"法定最高刑"：最多五年→5 年、最多十年→10 年、最多十五年→15 年、无期或死刑→20 年；超 20 年仍须追诉的要报最高检核准。</div>
+        <div class="scene"><span class="tag">生活场景</span>　一个较轻的犯罪，多年未被发现也没立案，可能已过追诉时效；但已立案侦查、或逃避侦查审判的，不受时效限制。</div>
+        <div class="mis"><span class="tag">常见误区</span>　①追诉时效≠民事诉讼时效（3 年），前者管"是否追刑责"，后者管"能否请求法院保护民事权利"；②被害人在追诉期限内提出控告、应立案而不立案的，不受追诉期限限制。</div>
+      </div>
+    </article>
+
+    <article class="art" style="--ac:#6a3fb5;margin-top:20px">
+      <header><div class="no">民事诉讼法 171 / 152 条</div>
+        <div><h4>打民事官司：上诉期与审理期限</h4><div class="src">程序法 · 第二审程序 / 第一审普通程序</div></div></header>
+      <div class="body">
+        <div class="quote">
+          <b>第171条</b>　当事人不服地方人民法院第一审判决的，有权在判决书送达之日起<b>十五日内</b>向上一级人民法院提起上诉。当事人不服地方人民法院第一审裁定的，有权在裁定书送达之日起<b>十日内</b>向上一级人民法院提起上诉。<br>
+          <b>第152条</b>　人民法院适用普通程序审理的案件，应当在立案之日起<b>六个月内</b>审结。有特殊情况需要延长的，经本院院长批准，可以延长六个月；还需要延长的，报请上级人民法院批准。
+        </div>
+        <div class="plain"><span class="tag">大白话</span>　不服一审判决：<b>15 日</b>内上诉；不服一审裁定：<b>10 日</b>内上诉。一审普通程序一般 <b>6 个月</b>内审结（可依法延长）。</div>
+        <div class="scene"><span class="tag">生活场景</span>　收到一审判决书，从<b>送达之日</b>起算 15 天，过了就丧失上诉权、判决生效；要上诉务必在期限内递交上诉状。</div>
+        <div class="mis"><span class="tag">常见误区</span>　①上诉期从"送达之日"起算，不是"开庭之日"；②刑事上诉期不同（判决 10 日、裁定 5 日，刑诉法230条），别与民事混淆。</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ §8 实用工具 ============ -->
+<section id="s8">
+  <h2><span class="idx">§8</span> 实用工具 <span class="en">Hands-on Tools</span></h2>
+  <p class="sec-lead">法律条文要能"用起来"。这四个计算器 + 两张速查表，把高频数字变成即时答案（结果仅供参考，正式主张请咨询专业律师）。</p>
+
+  <h3>工具 1 · 经济补偿金 / 赔偿金计算器</h3>
+  <div class="calc" id="calc-sev">
+    <div class="row"><label>月平均工资（元）</label><input type="number" id="sv-wage" value="10000" min="0" step="100"></div>
+    <div class="row"><label>工作年限（年，可填小数）</label><input type="number" id="sv-year" value="3.5" min="0" step="0.5"></div>
+    <div class="row"><label>当地上年度职工月平均工资（元）</label><input type="number" id="sv-avg" value="8000" min="0" step="100"></div>
+    <div class="row"><label>解除/终止情形</label>
+      <select id="sv-type">
+        <option value="N">协商一致解除 / 合同到期单位不续签 / 经济性裁员（补偿 N）</option>
+        <option value="N1">单位合法解除但未提前 30 天通知（N+1）</option>
+        <option value="2N">单位违法解除（赔偿 2N，最有利）</option>
+        <option value="0">员工主动辞职 / 严重违纪被开除（一般无补偿）</option>
+      </select>
+    </div>
+    <div class="out">
+      <div>应得金额（元）</div>
+      <div class="big" id="sv-out">—</div>
+      <div class="exp" id="sv-exp"></div>
+    </div>
+  </div>
+
+  <h3>工具 2 · 加班费计算器</h3>
+  <div class="calc" id="calc-ot">
+    <div class="row"><label>月工资（元）</label><input type="number" id="ot-wage" value="8000" min="0" step="100"></div>
+    <div class="row"><label>工作日延时加班（小时）</label><input type="number" id="ot-a" value="0" min="0" step="1"></div>
+    <div class="row"><label>休息日加班（小时）</label><input type="number" id="ot-b" value="0" min="0" step="1"></div>
+    <div class="row"><label>法定节假日加班（小时）</label><input type="number" id="ot-c" value="0" min="0" step="1"></div>
+    <div class="out">
+      <div>加班费合计（元）</div>
+      <div class="big" id="ot-out">—</div>
+      <div class="exp" id="ot-exp"></div>
+    </div>
+  </div>
+
+  <h3>工具 3 · 维权时效计算器</h3>
+  <div class="calc" id="calc-lim">
+    <div class="row"><label>起算日（知道权利被侵害之日）</label><input type="date" id="lim-date"></div>
+    <div class="row"><label>事项类型</label>
+      <select id="lim-type">
+        <option value="1095">民事权利诉讼时效（3 年 = 1095 天）</option>
+        <option value="365">劳动仲裁申请时效（1 年 = 365 天）</option>
+        <option value="60">行政复议申请期限（60 日）</option>
+        <option value="180">行政诉讼起诉期限（6 个月 = 180 日）</option>
+        <option value="15">民事/行政上诉期（判决 15 日）</option>
+        <option value="10">民事/行政上诉期（裁定 10 日）</option>
+      </select>
+    </div>
+    <div class="out">
+      <div>最晚应在该日之前主张</div>
+      <div class="big" id="lim-out">—</div>
+      <div class="exp" id="lim-exp"></div>
+    </div>
+  </div>
+
+  <h3>工具 4 · 定金上限与罚则计算器</h3>
+  <div class="calc" id="calc-deposit">
+    <div class="row"><label>主合同标的额（元）</label><input type="number" id="dp-amount" value="100000" min="0" step="1000"></div>
+    <div class="row"><label>实际交付定金（元）</label><input type="number" id="dp-deposit" value="30000" min="0" step="1000"></div>
+    <div class="row"><label>履行情况</label>
+      <select id="dp-case">
+        <option value="pay">给付定金方违约（无权请求返还定金）</option>
+        <option value="recv">收受定金方违约（双倍返还定金）</option>
+        <option value="ok">正常履行（定金抵作价款或收回）</option>
+      </select>
+    </div>
+    <div class="out">
+      <div>有效定金与法律后果</div>
+      <div class="big" id="dp-out">—</div>
+      <div class="exp" id="dp-exp"></div>
+    </div>
+  </div>
+
+  <h3>时效速查表</h3>
+  <table>
+    <thead><tr><th>事项</th><th>期限</th><th>法律依据 / 说明</th></tr></thead>
+    <tbody>
+      <tr><td>一般民事诉讼时效</td><td class="n"><b>3 年</b></td><td>民法典第188条；自知道或应当知道权利受损及义务人之日起算</td></tr>
+      <tr><td>劳动仲裁申请时效</td><td class="n"><b>1 年</b></td><td>劳动争议调解仲裁法第27条；劳动关系存续期间因拖欠报酬争议不受1年限制</td></tr>
+      <tr><td>行政复议申请</td><td class="n"><b>60 日</b></td><td>自知道该行政行为之日起</td></tr>
+      <tr><td>行政诉讼起诉</td><td class="n"><b>6 个月</b></td><td>自知道或应当知道作出行政行为之日起</td></tr>
+      <tr><td>上诉期（民事/行政）</td><td class="n">判决 <b>15</b> 日 / 裁定 <b>10</b> 日</td><td>自判决书、裁定书送达之日起</td></tr>
+      <tr><td>上诉期（刑事）</td><td class="n">判决 <b>10</b> 日 / 裁定 <b>5</b> 日</td><td>自收到判决书、裁定书之日起</td></tr>
+      <tr><td>最高诉讼时效（最长保护期）</td><td class="n"><b>20 年</b></td><td>自权利受损之日起，超过法院一般不予保护（特殊情况可延长）</td></tr>
+    </tbody>
+  </table>
+
+  <h3>纠纷解决路径图</h3>
+  <div class="viz">
+    <div class="fig-title">图 4-1 · 遇到纠纷，按这条路走 <span>先低成本，后强制力</span></div>
+    <div class="flow">
+      <div class="fnode"><b>① 协商</b><span>双方直接谈，成本最低、最快。适合金额小、关系还要维持的纠纷。</span></div>
+      <div class="farrow">▼</div>
+      <div class="fnode" style="border-left-color:var(--c-econ)"><b>② 调解</b><span>人民调解委员会 / 行政机关 / 法院诉前调解。达成的调解协议可申请司法确认，具强制执行力。</span></div>
+      <div class="farrow">▼</div>
+      <div class="fsplit">
+        <div class="fnode" style="border-left-color:var(--c-social)"><b>③A 劳动仲裁 / 商事仲裁</b><span>劳动争议须<b>先仲裁</b>后诉讼；有仲裁协议的商事纠纷一裁终局。</span></div>
+        <div class="fnode" style="border-left-color:var(--c-proc)"><b>③B 民事诉讼</b><span>直接起诉。标的额小的走小额诉讼，一审终审。</span></div>
+      </div>
+      <div class="farrow">▼</div>
+      <div class="fnode" style="border-left-color:var(--c-admin)"><b>④ 一审 → 二审</b><span>两审终审。判决 15 日 / 裁定 10 日内可上诉。</span></div>
+      <div class="farrow">▼</div>
+      <div class="fnode" style="border-left-color:var(--c-crim)"><b>⑤ 申请再审 / 申请执行</b><span>生效判决可申请再审（审判监督）；对方不履行，申请法院强制执行。</span></div>
+    </div>
+    <p class="cap">提示：行政诉讼另有"复议前置"等特殊路径；刑事走"报案—立案侦查—公诉—审判"。本图为主干。</p>
+  </div>
+</section>
+
+<!-- ============ §9 分卷入口 ============ -->
+<section id="s9">
+  <h2><span class="idx">§9</span> 分卷入口 <span class="en">Volumes</span></h2>
+  <p class="sec-lead">骨架已经拆成可独立浏览的分卷，每卷按"制度 → 条文 → 场景 → 工具"展开。点卡片进入。</p>
+  <div class="grid3">
+    <a class="branch" href="labor.html" style="--bc:var(--c-social);text-decoration:none;color:inherit;display:block">
+      <h4><span class="dot"></span>劳动维权全流程</h4>
+      <div class="en">Labor · 打工人必读</div>
+      <p>入职签约、试用期、加班与年假、工伤、竞业限制、离职 N/N+1/2N、仲裁流程与举证。</p>
+      <div class="chips"><span class="chip">含 4 个计算器</span><span class="chip">仲裁全流程</span></div>
+    </a>
+    <a class="branch" href="civil.html" style="--bc:var(--c-civil);text-decoration:none;color:inherit;display:block">
+      <h4><span class="dot"></span>民法典七编速览</h4>
+      <div class="en">Civil Code</div>
+      <p>总则 / 物权 / 合同 / 人格权 / 婚姻家庭 / 继承 / 侵权责任，高频条文与生活场景。</p>
+      <div class="chips"><span class="chip">善意取得</span><span class="chip">夫妻债务</span><span class="chip">法定继承</span></div>
+    </a>
+    <a class="branch" href="criminal.html" style="--bc:var(--c-crim);text-decoration:none;color:inherit;display:block">
+      <h4><span class="dot"></span>常见犯罪与刑事流程</h4>
+      <div class="en">Criminal Law</div>
+      <p>刑事责任年龄、常见罪名量刑表、正当防卫、刑事流程与程序权利、追诉时效。</p>
+      <div class="chips"><span class="chip">量刑速查</span><span class="chip">流程图</span></div>
+    </a>
+    <a class="branch" href="consumer.html" style="--bc:var(--c-econ);text-decoration:none;color:inherit;display:block">
+      <h4><span class="dot"></span>消费 · 借贷 · 房产</h4>
+      <div class="en">Consumer & Money</div>
+      <p>假一赔三、十倍赔偿、七日退货、民间借贷利率上限、定金订金、房屋租赁。</p>
+      <div class="chips"><span class="chip">利率计算器</span><span class="chip">定金罚则</span></div>
+    </a>
+    <a class="branch" href="traffic.html" style="--bc:var(--c-admin);text-decoration:none;color:inherit;display:block">
+      <h4><span class="dot"></span>交通 · 治安</h4>
+      <div class="en">Traffic & Public Order</div>
+      <p>酒驾/醉驾、事故责任与保险、打架成本、治安拘留、行政处罚救济。</p>
+      <div class="chips"><span class="chip">醉驾标准</span><span class="chip">打架成本表</span></div>
+    </a>
+    <a class="branch" href="admin.html" style="--bc:var(--c-admin);text-decoration:none;color:inherit;display:block">
+      <h4><span class="dot"></span>行政法</h4>
+      <div class="en">Administrative Law</div>
+      <p>许可、处罚（告知/听证/一事不再罚）、行政强制、行政复议与行政诉讼、救济路线图。</p>
+      <div class="chips"><span class="chip">60日复议</span><span class="chip">6个月起诉</span></div>
+    </a>
+    <a class="branch" href="procedure.html" style="--bc:var(--c-proc);text-decoration:none;color:inherit;display:block">
+      <h4><span class="dot"></span>程序法</h4>
+      <div class="en">Procedure</div>
+      <p>民事诉讼全流程、管辖、证据规则与举证责任、仲裁与调解、强制执行。</p>
+      <div class="chips"><span class="chip">上诉期计算</span><span class="chip">执行期限</span></div>
+    </a>
+    <a class="branch" href="constitution.html" style="--bc:var(--c-const);text-decoration:none;color:inherit;display:block">
+      <h4><span class="dot"></span>宪法</h4>
+      <div class="en">Constitution</div>
+      <p>宪法为何最高、公民基本权利（人身自由/人格/通信秘密等）、国家机构与宪法监督。</p>
+      <div class="chips"><span class="chip">权利五组图</span><span class="chip">国家机构图</span></div>
+    </a>
+    <a class="branch" href="company.html" style="--bc:#2c5fae;text-decoration:none;color:inherit;display:block">
+      <h4><span class="dot"></span>公司 · 商事</h4>
+      <div class="en">Company Law</div>
+      <p>2023 新《公司法》：认缴 5 年缴足、股东知情权、股权转让、董监高与实控人责任、解散破产。</p>
+      <div class="chips"><span class="chip">认缴5年</span><span class="chip">股东查账</span></div>
+    </a>
+    <a class="branch" href="family.html" style="--bc:#a24b00;text-decoration:none;color:inherit;display:block">
+      <h4><span class="dot"></span>婚姻家庭与继承</h4>
+      <div class="en">Family &amp; Inheritance</div>
+      <p>彩礼新规、夫妻财产债务、人身安全保护令、离婚抚养、法定继承与遗嘱。</p>
+      <div class="chips"><span class="chip">彩礼新规</span><span class="chip">抚养费计算器</span></div>
+    </a>
+    <a class="branch" href="cyber.html" style="--bc:#6a3fb5;text-decoration:none;color:inherit;display:block">
+      <h4><span class="dot"></span>网络 · 数据 · 个人信息</h4>
+      <div class="en">Data &amp; Cyber</div>
+      <p>个人信息保护、敏感信息单独同意、反电信网络诈骗、网络安全法与数据安全法。</p>
+      <div class="chips"><span class="chip">过错推定</span><span class="chip">反电诈</span></div>
+    </a>
+    <a class="branch" href="contract.html" style="--bc:#4f86e0;text-decoration:none;color:inherit;display:block">
+      <h4><span class="dot"></span>合同与交易</h4>
+      <div class="en">Contracts</div>
+      <p>订立与格式条款、无效/可撤销、三大抗辩权、违约责任、常见合同要点、电商与电子签名。</p>
+      <div class="chips"><span class="chip">违约金vs定金</span><span class="chip">撤销权期限</span></div>
+    </a>
+    <a class="branch" href="finance.html" style="--bc:#1f7a45;text-decoration:none;color:inherit;display:block">
+      <h4><span class="dot"></span>金融与保险消费</h4>
+      <div class="en">Finance &amp; Insurance</div>
+      <p>征信（5 年不良记录）、担保、保险（不可抗辩/免责条款）、银行卡盗刷、投资理财适当性。</p>
+      <div class="chips"><span class="chip">征信5年</span><span class="chip">50万存款保险</span></div>
+    </a>
+    <a class="branch" href="special.html" style="--bc:#8a5a00;text-decoration:none;color:inherit;display:block">
+      <h4><span class="dot"></span>特殊群体与法律救助</h4>
+      <div class="en">Vulnerable Groups</div>
+      <p>未成年人六大保护、常回家看看、妇女就业歧视/性骚扰、法律援助 9 类事项、慈善与个人求助。</p>
+      <div class="chips"><span class="chip">法律援助</span><span class="chip">未成年保护</span></div>
+    </a>
+    <a class="branch" href="tax.html" style="--bc:#8a5a00;text-decoration:none;color:inherit;display:block">
+      <h4><span class="dot"></span>税收与发票</h4>
+      <div class="en">Tax</div>
+      <p>个税与专项附加扣除、增值税、发票与虚开风险、征管争议、逃税罪的特殊规则。</p>
+      <div class="chips"><span class="chip">个税计算器</span><span class="chip">专项扣除7项</span></div>
+    </a>
+    <a class="branch" href="housing.html" style="--bc:#2c5fae;text-decoration:none;color:inherit;display:block">
+      <h4><span class="dot"></span>房产与物业</h4>
+      <div class="en">Housing</div>
+      <p>买新房五证、面积误差 3%、二手房税费、租赁、物业（不得断水电）、征收补偿、公积金贷款。</p>
+      <div class="chips"><span class="chip">二手房税费</span><span class="chip">征收补偿</span></div>
+    </a>
+    <a class="branch" href="study.html" style="--bc:#5b6270;text-decoration:none;color:inherit;display:block">
+      <h4><span class="dot"></span>如何高效学法</h4>
+      <div class="en">How to Learn</div>
+      <p>三张地图、读法条四要素、法律解释方法、检索工具与类案检索、学习路径与核验原则。</p>
+      <div class="chips"><span class="chip">8 个官方检索站</span><span class="chip">学法路径</span></div>
+    </a>
+  </div>
+</section>
+
+<!-- ============ §10 扩展路线图 ============ -->
+<section id="s10">
+  <h2><span class="idx">§10</span> 扩展路线图 <span class="en">Roadmap</span></h2>
+  <p class="sec-lead">已上线 17 个分卷。剩余按"先高频、后体系"排队，逐卷展开。</p>
+
+  <details open>
+    <summary>第一批 · 生活高频 <span class="chip" style="margin-left:6px">已上线</span></summary>
+    <div class="body">
+      <ul>
+        <li>✅ <b>民法典七编</b> → <a href="civil.html">civil.html</a></li>
+        <li>✅ <b>劳动维权全流程</b> → <a href="labor.html">labor.html</a></li>
+        <li>✅ <b>常见犯罪图谱</b> → <a href="criminal.html">criminal.html</a></li>
+        <li>✅ <b>交通与治安</b> → <a href="traffic.html">traffic.html</a></li>
+      </ul>
+    </div>
+  </details>
+  <details open>
+    <summary>第二批 · 财产与交易 <span class="chip" style="margin-left:6px">已上线</span></summary>
+    <div class="body">
+      <ul>
+        <li>✅ 消费与借贷、定金订金、房屋租赁 → <a href="consumer.html">consumer.html</a></li>
+        <li>✅ 公司商事：股东权利、股权转让、董监高责任、破产清算 → <a href="company.html">company.html</a></li>
+        <li>✅ 合同与交易：订立、无效可撤销、抗辩权、违约责任 → <a href="contract.html">contract.html</a></li>
+        <li>✅ 金融与保险消费：征信、担保、保险、银行卡安全 → <a href="finance.html">finance.html</a></li>
+      </ul>
+    </div>
+  </details>
+  <details open>
+    <summary>第三批 · 体系与进阶 <span class="chip" style="margin-left:6px">已上线</span></summary>
+    <div class="body">
+      <ul>
+        <li>✅ 宪法与公民基本权利、国家机构 → <a href="constitution.html">constitution.html</a></li>
+        <li>✅ 行政法：许可、处罚、复议、诉讼全流程 → <a href="admin.html">admin.html</a></li>
+        <li>✅ 程序法：立案、证据规则、举证责任、执行 → <a href="procedure.html">procedure.html</a></li>
+        <li>✅ 婚姻家庭与继承、网络·数据·个人信息 → <a href="family.html">family.html</a> · <a href="cyber.html">cyber.html</a></li>
+        <li>✅ 法理学 / 法律解释方法 / 类案检索 → <a href="study.html">study.html</a></li>
+        <li>✅ 特殊群体与法律救助：未成年人/老年人/残疾人/妇女、法律援助、慈善 → <a href="special.html">special.html</a></li>
+        <li>✅ 税收与发票、房产与物业 → <a href="tax.html">tax.html</a> · <a href="housing.html">housing.html</a></li>
+        <li>＋ 涉外/国际法、海商、公司法进阶（后续可扩）</li>
+      </ul>
+    </div>
+  </details>
+
+  <div class="callout analogy">
+    <span class="tag">可视化形式预案</span>
+    <p style="margin:4px 0 0">后续每条都用统一模板：<b>结构图（时间轴 / 流程图 / 关系图）+ 法条原文 + 大白话 + 场景案例 + 误区 + 计算器/自测</b>。复杂制度配"交互式模拟"（如法庭流程走一遍、赔偿金额实时变）。</p>
+  </div>
+</section>
+
+
+<!-- 附录：原文核验 -->
+<section id="src">
+  <h2><span class="idx">§附录</span> 法律依据与原文核验 <span class="en">Official Sources</span></h2>
+  <p class="sec-lead">本页所有条文均以<b>国家法律法规数据库</b>（全国人民代表大会常务委员会办公厅主办，flk.npc.gov.cn）的<b>现行有效文本</b>为准。下表给出每部法律的公布/施行日期与官方原文直达链接，可逐条核对。</p>
+  <div class="tw"><table>
+    <thead><tr><th>法律 / 法规 / 司法解释</th><th>公布日期</th><th>施行日期</th><th>官方原文</th></tr></thead>
+    <tbody>
+      <tr><td>中华人民共和国宪法（2018年修正文本）</td><td class="n">2018-03-11</td><td class="n">2018-03-11</td><td><a href="https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf5a483004b" target="_blank" rel="noopener">查看原文 ↗</a></td></tr>
+      <tr><td>中华人民共和国立法法</td><td class="n">2023-03-13</td><td class="n">2023-03-15</td><td><a href="https://flk.npc.gov.cn/detail?id=ff808181865edc140186d9d6f1cb2503" target="_blank" rel="noopener">查看原文 ↗</a></td></tr>
+      <tr><td>中华人民共和国民法典</td><td class="n">2020-05-28</td><td class="n">2021-01-01</td><td><a href="https://flk.npc.gov.cn/detail?id=ff808081729d1efe01729d50b5c500bf" target="_blank" rel="noopener">查看原文 ↗</a></td></tr>
+      <tr><td>中华人民共和国刑法</td><td class="n">2020-12-26</td><td class="n">2021-03-01</td><td><a href="https://flk.npc.gov.cn/detail?id=ff808181796a636a0179822a19640c92" target="_blank" rel="noopener">查看原文 ↗</a></td></tr>
+      <tr><td>中华人民共和国刑法修正案（十二）</td><td class="n">2023-12-29</td><td class="n">2024-03-01</td><td><a href="https://flk.npc.gov.cn/detail?id=ff8081818c3ce31f018cb6a6bc412f55" target="_blank" rel="noopener">查看原文 ↗</a></td></tr>
+      <tr><td>中华人民共和国行政处罚法</td><td class="n">2021-01-22</td><td class="n">2021-07-15</td><td><a href="https://flk.npc.gov.cn/detail?id=ff8080817703add20177373df6a43e33" target="_blank" rel="noopener">查看原文 ↗</a></td></tr>
+      <tr><td>中华人民共和国行政复议法</td><td class="n">2023-09-01</td><td class="n">2024-01-01</td><td><a href="https://flk.npc.gov.cn/detail?id=ff8081818a21e6c3018a508d491a0c98" target="_blank" rel="noopener">查看原文 ↗</a></td></tr>
+      <tr><td>中华人民共和国行政诉讼法</td><td class="n">2017-06-27</td><td class="n">2017-07-01</td><td><a href="https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf858550a0f" target="_blank" rel="noopener">查看原文 ↗</a></td></tr>
+      <tr><td>中华人民共和国消费者权益保护法</td><td class="n">2013-10-25</td><td class="n">2014-03-15</td><td><a href="https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf7670606ef" target="_blank" rel="noopener">查看原文 ↗</a></td></tr>
+      <tr><td>中华人民共和国食品安全法</td><td class="n">2025-09-12</td><td class="n">2025-12-01</td><td><a href="https://flk.npc.gov.cn/detail?id=7b5a76d0461745a08d3f964916b87ef3" target="_blank" rel="noopener">查看原文 ↗</a></td></tr>
+      <tr><td>中华人民共和国劳动法</td><td class="n">2018-12-29</td><td class="n">2018-12-29</td><td><a href="https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f20f16ee11737" target="_blank" rel="noopener">查看原文 ↗</a></td></tr>
+      <tr><td>中华人民共和国劳动合同法</td><td class="n">2012-12-28</td><td class="n">2013-07-01</td><td><a href="https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3" target="_blank" rel="noopener">查看原文 ↗</a></td></tr>
+      <tr><td>中华人民共和国民事诉讼法</td><td class="n">2023-09-01</td><td class="n">2024-01-01</td><td><a href="https://flk.npc.gov.cn/detail?id=ff8081818a21dc13018b425303b7086d" target="_blank" rel="noopener">查看原文 ↗</a></td></tr>
+      <tr><td>中华人民共和国刑事诉讼法</td><td class="n">2018-10-26</td><td class="n">2018-10-26</td><td><a href="https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f1d1b81b01351" target="_blank" rel="noopener">查看原文 ↗</a></td></tr>
+      <tr><td>中华人民共和国仲裁法</td><td class="n">2025-09-12</td><td class="n">2026-03-01</td><td><a href="https://flk.npc.gov.cn/detail?id=58d7569a322b4eca9b22feaa4f5d7d4f" target="_blank" rel="noopener">查看原文 ↗</a></td></tr>
+      <tr><td>中华人民共和国国家赔偿法</td><td class="n">2012-10-26</td><td class="n">2013-01-01</td><td><a href="https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74c26069f" target="_blank" rel="noopener">查看原文 ↗</a></td></tr>
+    </tbody>
+  </table></div>
+  <p style="font-size:13px;color:var(--sub)">数据来源：国家法律法规数据库（flk.npc.gov.cn）· 链接核验日期 <b>2026-10-06</b> · 现行有效性以该数据库实时文本为准。</p>
+</section>
+
+<div class="disclaimer"><b>免责声明：</b>本页为普法学习与可视化整理，条文以现行有效法律为准，个别内容可能随法律修订而变化；具体案件请以最新法律法规、司法解释及专业法律意见为准，本页不构成法律意见。</div>
+
+</main>
+
+<footer class="foot">
+  <p><b>中国法律可视化地图</b> · 第一版（骨架 + 13 条重点条文精讲）· 生成于 2026-10-06。<br>
+  结构来源：《宪法》、中国特色社会主义法律体系七大部门、《民法典》《刑法》《劳动合同法》《消费者权益保护法》《食品安全法》等现行法律。后续按 §10 路线图逐卷丰富。</p>
+</footer>
+
+</div>
+
+<script src="assets/site.js"></script>
+<script>
+/* 左侧目录高亮由 assets/site.js 统一处理 */
+
+/* ---------- 工具1：经济补偿金 ---------- */
+(function(){
+  const q=id=>document.getElementById(id);
+  function calcMonthlyYears(y){
+    // 第47条：满1年=1；6个月以上不满1年=1；不满6个月=0.5
+    const whole=Math.floor(y+1e-9);
+    const rem=y-whole;
+    let add=0;
+    if(rem>1e-9){ add = rem>=0.5 ? 1 : 0.5; }
+    return whole+add;
+  }
+  function fmt(n){return n.toLocaleString('zh-CN',{maximumFractionDigits:2});}
+  function run(){
+    const wage=+q('sv-wage').value||0;
+    const year=+q('sv-year').value||0;
+    const avg=+q('sv-avg').value||0;
+    const type=q('sv-type').value;
+    let months=calcMonthlyYears(year);
+    let base=wage;
+    let capped=false;
+    if(avg>0 && wage>avg*3){ base=avg*3; capped=true; }
+    let payMonths=months;
+    if(capped && payMonths>12) payMonths=12;
+    let factor=1, extra=0;
+    if(type==='0'){ factor=0; }
+    else if(type==='N'){ factor=1; }
+    else if(type==='N1'){ factor=1; extra=1; }
+    else if(type==='2N'){ factor=2; }
+    let amount=base*payMonths*factor + base*extra;
+    const out=q('sv-out'), exp=q('sv-exp');
+    if(type==='0'){
+      out.textContent='0 元（一般无补偿）';
+      out.classList.add('bad');
+      exp.textContent='员工主动辞职、或因严重违纪被解除，通常无法主张经济补偿。';
+      return;
+    }
+    out.classList.remove('bad');
+    out.textContent=fmt(amount)+' 元';
+    let s=`工作年限折算补偿月数 N=${fmt(months)}（${year} 年 → 折算 ${fmt(months)} 个月）`;
+    s+=`；月工资基数 ${fmt(base)} 元${capped?'（超过当地社平 3 倍，已封顶）':''}`;
+    if(type==='N1') s+='；另加 1 个月代通知金';
+    if(type==='2N') s+='；违法解除按 2 倍计';
+    s+='。';
+    if(capped) s+='（高薪封顶：基数按社平 3 倍、年限最高 12 年）';
+    exp.textContent='计算：'+s;
+  }
+  ['sv-wage','sv-year','sv-avg','sv-type'].forEach(id=>q(id).addEventListener('input',run));
+  run();
+})();
+
+/* ---------- 工具2：加班费 ---------- */
+(function(){
+  const q=id=>document.getElementById(id);
+  function run(){
+    const wage=+q('ot-wage').value||0;
+    const a=+q('ot-a').value||0, b=+q('ot-b').value||0, c=+q('ot-c').value||0;
+    const hourly=wage/21.75/8;
+    const p1=hourly*1.5*a, p2=hourly*2*b, p3=hourly*3*c;
+    const total=p1+p2+p3;
+    q('ot-out').textContent=total.toLocaleString('zh-CN',{maximumFractionDigits:2})+' 元';
+    q('ot-exp').textContent=
+      `小时工资 = ${wage} ÷ 21.75 ÷ 8 ≈ ${hourly.toFixed(2)} 元；`+
+      `工作日延时 ${p1.toFixed(0)}（1.5×）+ 休息日 ${p2.toFixed(0)}（2×）+ 法定节假日 ${p3.toFixed(0)}（3×）`;
+  }
+  ['ot-wage','ot-a','ot-b','ot-c'].forEach(id=>q(id).addEventListener('input',run));
+  run();
+})();
+
+/* ---------- 工具3：时效 ---------- */
+(function(){
+  const q=id=>document.getElementById(id);
+  const d=new Date();
+  q('lim-date').value=d.toISOString().slice(0,10);
+  function run(){
+    const v=q('lim-date').value; if(!v) return;
+    const days=+q('lim-type').value;
+    const start=new Date(v+'T00:00:00');
+    const end=new Date(start.getTime()+days*86400000);
+    q('lim-out').textContent=end.toLocaleDateString('zh-CN',{year:'numeric',month:'long',day:'numeric'});
+    const now=new Date();
+    const left=Math.ceil((end-now)/86400000);
+    q('lim-exp').textContent=
+      `起算日 ${start.toLocaleDateString('zh-CN')} ＋ ${days} 天；`+
+      (left>=0?`距今还有约 ${left} 天。`:`已过期约 ${-left} 天，通常丧失胜诉权，尽快咨询律师。`);
+  }
+  ['lim-date','lim-type'].forEach(id=>q(id).addEventListener('input',run));
+  run();
+})();
+
+/* ---------- 工具4：定金上限与罚则（民法典第586、587条） ---------- */
+(function(){
+  const q=id=>document.getElementById(id);
+  const fmt=n=>(isFinite(n)?n:0).toLocaleString('zh-CN',{maximumFractionDigits:2});
+  function run(){
+    const amount=+q('dp-amount').value||0;
+    const dep=+q('dp-deposit').value||0;
+    const c=q('dp-case').value;
+    const cap=amount*0.2;               // 定金上限＝主合同标的额的20%
+    const valid=Math.min(dep,cap);      // 有效定金
+    const excess=dep-valid;             // 超出部分不产生定金效力
+    const out=q('dp-out'), exp=q('dp-exp');
+    const excessNote = excess>0 ? `（超出部分 ${fmt(excess)} 元不产生定金效力，按预付款处理）` : '';
+    if(c==='pay'){
+      out.textContent='损失 '+fmt(valid)+' 元';
+      out.classList.add('bad');
+      exp.textContent=`有效定金 = min(交付定金 ${fmt(dep)}, 标的额20% ＝ ${fmt(cap)}) = ${fmt(valid)} 元${excessNote}；给付定金方违约，无权请求返还定金。`;
+    } else if(c==='recv'){
+      out.textContent='应返还 '+fmt(valid*2)+' 元';
+      out.classList.remove('bad');
+      exp.textContent=`有效定金 ${fmt(valid)} 元${excessNote}；收受定金方违约，应当双倍返还定金 ＝ ${fmt(valid*2)} 元。`;
+    } else {
+      out.textContent='定金抵作价款或收回';
+      out.classList.remove('bad');
+      exp.textContent=`有效定金 ${fmt(valid)} 元${excessNote}；债务人正常履行债务时，定金应当抵作价款或者收回。`;
+    }
+  }
+  ['dp-amount','dp-deposit','dp-case'].forEach(id=>q(id).addEventListener('input',run));
+  run();
+})();
+</script>
+</body>
+</html>
