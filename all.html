@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>全站条文索引 · 中国法律可视化地图</title>
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.idx-wrap{max-width:1100px;margin:0 auto;padding:0 22px 90px}
+.idxbar{position:sticky;top:54px;z-index:40;background:rgba(245,244,241,.95);backdrop-filter:blur(8px);padding:14px 0 10px;border-bottom:1px solid var(--line);margin-bottom:18px}
+.idxbar input{width:100%;padding:12px 16px;font-size:16px;border:1px solid var(--line);border-radius:12px;background:#fff;font-family:inherit}
+.idxbar .meta{font-size:13px;color:var(--sub);margin-top:8px}
+.vol{margin-bottom:30px}
+.vol h2{font-size:19px;margin:0 0 8px;display:flex;align-items:baseline;gap:10px}
+.vol h2 a{color:inherit;text-decoration:none;border-bottom:2px solid transparent}
+.vol h2 a:hover{border-bottom-color:var(--accent)}
+.vol .cnt{font-size:12.5px;color:var(--sub);font-weight:400}
+.idxlist{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2px 22px}
+.idxlist li{border-bottom:1px dashed var(--line)}
+.idxlist a{display:flex;gap:10px;padding:7px 4px;text-decoration:none;color:var(--ink);font-size:14px;align-items:baseline;min-width:0}
+.idxlist a:hover{color:var(--accent)}
+.lno{flex:none;min-width:118px;font-weight:600;color:var(--accent);font-size:12.5px}
+.lt{flex:1 1 auto;min-width:0;color:#3a3f47;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hide{display:none}
+.empty{color:var(--sub);padding:20px 4px;display:none}
+@media(max-width:760px){.idxlist{grid-template-columns:minmax(0,1fr)}.lno{min-width:96px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="inner">
+  <a class="brand" href="index.html"><i></i>法律可视化地图</a>
+  <a class="pg" href="index.html">总览</a>
+  <a class="pg active" href="all.html">索引</a>
+  <a class="pg" href="labor.html">劳动</a>
+  <a class="pg" href="civil.html">民法</a>
+  <a class="pg" href="criminal.html">刑法</a>
+  <a class="pg" href="consumer.html">消费</a>
+  <a class="pg" href="traffic.html">交通</a>
+  <a class="pg" href="admin.html">行政</a>
+  <a class="pg" href="procedure.html">程序</a>
+  <a class="pg" href="constitution.html">宪法</a>
+  <a class="pg" href="company.html">公司</a>
+  <a class="pg" href="family.html">家事</a>
+  <a class="pg" href="cyber.html">网络</a>
+  <a class="pg" href="contract.html">合同</a>
+  <a class="pg" href="finance.html">金融</a>
+  <a class="pg" href="special.html">救助</a>
+  <a class="pg" href="tax.html">税收</a>
+  <a class="pg" href="housing.html">房产</a>
+  <a class="pg" href="study.html">学法</a>
+</div></div>
+
+<div class="idx-wrap">
+<header class="hero" style="border-bottom:none;padding:30px 0 4px">
+  <div class="badge-top">全站条文索引 · 共 313 条精讲，跨 18 卷</div>
+  <h1 style="font-size:28px">全站条文索引</h1>
+  <p class="lead">把 18 个分卷里的所有"条文精讲卡"汇总到一页，支持<b>关键词搜索</b>（法名、条号、标题均可）。点任意一条进入所在分卷。</p>
+</header>
+
+<div class="idxbar">
+  <input id="q" type="search" placeholder="搜索：如 民法典 / 48 / 生育 / 醉驾 / 竞业限制 …" autocomplete="off">
+  <div class="meta"><span id="shown">313</span> / 313 条</div>
+</div>
+
+<div class="empty" id="empty">没有匹配的条文，换个关键词试试。</div>
+
+  <section class="vol">
+    <h2><a href="index.html">总览</a> <span class="cnt">24 条</span></h2>
+    <ul class="idxlist">
+      <li data-k="民法典 183 / 184 好人条款：见义勇为、紧急救助不担责"><a href="index.html"><span class="lno">民法典 183 / 184</span><span class="lt">好人条款：见义勇为、紧急救助不担责</span></a></li>
+      <li data-k="民法典 1254 高空抛物：找不到抛物人，物业和邻居也要担责"><a href="index.html"><span class="lno">民法典 1254</span><span class="lt">高空抛物：找不到抛物人，物业和邻居也要担责</span></a></li>
+      <li data-k="民法典 1077 离婚冷静期：协议离婚要等 30 天"><a href="index.html"><span class="lno">民法典 1077</span><span class="lt">离婚冷静期：协议离婚要等 30 天</span></a></li>
+      <li data-k="民法典 366 居住权：可以让别人一辈子住在你房里"><a href="index.html"><span class="lno">民法典 366</span><span class="lt">居住权：可以让别人一辈子住在你房里</span></a></li>
+      <li data-k="民法典 686 保证方式推定之变：默认&quot;一般保证&quot;"><a href="index.html"><span class="lno">民法典 686</span><span class="lt">保证方式推定之变：默认&quot;一般保证&quot;</span></a></li>
+      <li data-k="刑法 20 正当防卫：打不还手不再是&quot;唯一正确&quot;"><a href="index.html"><span class="lno">刑法 20</span><span class="lt">正当防卫：打不还手不再是&quot;唯一正确&quot;</span></a></li>
+      <li data-k="刑法 133 之一 危险驾驶罪：醉驾是刑事案件"><a href="index.html"><span class="lno">刑法 133 之一</span><span class="lt">危险驾驶罪：醉驾是刑事案件</span></a></li>
+      <li data-k="刑法 287 之二 帮信罪：把银行卡&quot;借&quot;出去也可能坐牢"><a href="index.html"><span class="lno">刑法 287 之二</span><span class="lt">帮信罪：把银行卡&quot;借&quot;出去也可能坐牢</span></a></li>
+      <li data-k="劳动合同法 19 试用期：最长 6 个月，且只能约定一次"><a href="index.html"><span class="lno">劳动合同法 19</span><span class="lt">试用期：最长 6 个月，且只能约定一次</span></a></li>
+      <li data-k="劳动合同法 47 / 87 经济补偿 n / n+1 / 2n：被辞退到底赔多少"><a href="index.html"><span class="lno">劳动合同法 47 / 87</span><span class="lt">经济补偿 N / N+1 / 2N：被辞退到底赔多少</span></a></li>
+      <li data-k="劳动法 44 加班费：1.5 倍 / 2 倍 / 3 倍怎么算"><a href="index.html"><span class="lno">劳动法 44</span><span class="lt">加班费：1.5 倍 / 2 倍 / 3 倍怎么算</span></a></li>
+      <li data-k="消费者权益保护法 55 假一赔三：最低赔 500 元"><a href="index.html"><span class="lno">消费者权益保护法 55</span><span class="lt">假一赔三：最低赔 500 元</span></a></li>
+      <li data-k="食品安全法 148 食品十倍赔偿：最低赔 1000 元"><a href="index.html"><span class="lno">食品安全法 148</span><span class="lt">食品十倍赔偿：最低赔 1000 元</span></a></li>
+      <li data-k="消费者权益保护法 25 网购七日无理由退货：拆封也能退（部分商品除外）"><a href="index.html"><span class="lno">消费者权益保护法 25</span><span class="lt">网购七日无理由退货：拆封也能退（部分商品除外）</span></a></li>
+      <li data-k="劳动合同法 10 / 82 不签书面劳动合同：从第二个月起付二倍工资"><a href="index.html"><span class="lno">劳动合同法 10 / 82</span><span class="lt">不签书面劳动合同：从第二个月起付二倍工资</span></a></li>
+      <li data-k="民事诉讼法 22 / 67 打官司先看两件事：去哪个法院、谁来举证"><a href="index.html"><span class="lno">民事诉讼法 22 / 67</span><span class="lt">打官司先看两件事：去哪个法院、谁来举证</span></a></li>
+      <li data-k="行政复议法 20 / 23 不服行政行为：60 日内可申请复议"><a href="index.html"><span class="lno">行政复议法 20 / 23</span><span class="lt">不服行政行为：60 日内可申请复议</span></a></li>
+      <li data-k="立法法 第11条 只能制定法律的 11 类事项（法律保留）"><a href="index.html"><span class="lno">立法法 第11条</span><span class="lt">只能制定法律的 11 类事项（法律保留）</span></a></li>
+      <li data-k="立法法 第48 / 53 条 法律解释权属于全国人大常委会"><a href="index.html"><span class="lno">立法法 第48 / 53 条</span><span class="lt">法律解释权属于全国人大常委会</span></a></li>
+      <li data-k="民法典 第179条 民事责任有 11 种承担方式，可单独也可合并"><a href="index.html"><span class="lno">民法典 第179条</span><span class="lt">民事责任有 11 种承担方式，可单独也可合并</span></a></li>
+      <li data-k="行政处罚法 第9条 行政处罚的六类种类"><a href="index.html"><span class="lno">行政处罚法 第9条</span><span class="lt">行政处罚的六类种类</span></a></li>
+      <li data-k="刑法 第33 / 34 条 刑罚的种类：五种主刑 + 三种附加刑"><a href="index.html"><span class="lno">刑法 第33 / 34 条</span><span class="lt">刑罚的种类：五种主刑 + 三种附加刑</span></a></li>
+      <li data-k="刑法 第87条 追诉时效：过了期限一般不再追诉"><a href="index.html"><span class="lno">刑法 第87条</span><span class="lt">追诉时效：过了期限一般不再追诉</span></a></li>
+      <li data-k="民事诉讼法 171 / 152 条 打民事官司：上诉期与审理期限"><a href="index.html"><span class="lno">民事诉讼法 171 / 152 条</span><span class="lt">打民事官司：上诉期与审理期限</span></a></li>
+    </ul>
+  </section>
+  <section class="vol">
+    <h2><a href="labor.html">劳动维权</a> <span class="cnt">21 条</span></h2>
+    <ul class="idxlist">
+      <li data-k="劳动合同法 10 / 82 没签书面劳动合同，可以要二倍工资"><a href="labor.html"><span class="lno">劳动合同法 10 / 82</span><span class="lt">没签书面劳动合同，可以要二倍工资</span></a></li>
+      <li data-k="劳动合同法 19 / 20 / 21 试用期：最长 6 个月，只能约定一次"><a href="labor.html"><span class="lno">劳动合同法 19 / 20 / 21</span><span class="lt">试用期：最长 6 个月，只能约定一次</span></a></li>
+      <li data-k="劳动合同法 22 / 23 / 24 服务期与竞业限制：违约金不是想定就定"><a href="labor.html"><span class="lno">劳动合同法 22 / 23 / 24</span><span class="lt">服务期与竞业限制：违约金不是想定就定</span></a></li>
+      <li data-k="劳动法 41 / 44 加班费：1.5 倍 / 2 倍 / 3 倍"><a href="labor.html"><span class="lno">劳动法 41 / 44</span><span class="lt">加班费：1.5 倍 / 2 倍 / 3 倍</span></a></li>
+      <li data-k="年休假条例 3 / 5 带薪年假：5 / 10 / 15 天，没休要补钱"><a href="labor.html"><span class="lno">年休假条例 3 / 5</span><span class="lt">带薪年假：5 / 10 / 15 天，没休要补钱</span></a></li>
+      <li data-k="工伤保险条例 17 / 33 / 39 / 62 工伤：申请时限、停工留薪、工亡补助"><a href="labor.html"><span class="lno">工伤保险条例 17 / 33 / 39 / 62</span><span class="lt">工伤：申请时限、停工留薪、工亡补助</span></a></li>
+      <li data-k="劳动合同法 42 / 45 女职工&quot;三期&quot;：不能随便解除"><a href="labor.html"><span class="lno">劳动合同法 42 / 45</span><span class="lt">女职工&quot;三期&quot;：不能随便解除</span></a></li>
+      <li data-k="劳动合同法 46 / 47 经济补偿 n：什么时候有、怎么算"><a href="labor.html"><span class="lno">劳动合同法 46 / 47</span><span class="lt">经济补偿 N：什么时候有、怎么算</span></a></li>
+      <li data-k="劳动合同法 40 代通知金 &quot;+1&quot;"><a href="labor.html"><span class="lno">劳动合同法 40</span><span class="lt">代通知金 &quot;+1&quot;</span></a></li>
+      <li data-k="劳动合同法 48 / 87 违法解除 &quot;2n&quot;"><a href="labor.html"><span class="lno">劳动合同法 48 / 87</span><span class="lt">违法解除 &quot;2N&quot;</span></a></li>
+      <li data-k="劳动合同法 38 / 50 被迫解除与离职手续"><a href="labor.html"><span class="lno">劳动合同法 38 / 50</span><span class="lt">被迫解除与离职手续</span></a></li>
+      <li data-k="社会保险法 58 / 60 / 86 参保是强制义务，欠缴要加收滞纳金"><a href="labor.html"><span class="lno">社会保险法 58 / 60 / 86</span><span class="lt">参保是强制义务，欠缴要加收滞纳金</span></a></li>
+      <li data-k="社会保险法 16 / 27 / 28 养老与医疗：缴费满 15 年，看病按目录报销"><a href="labor.html"><span class="lno">社会保险法 16 / 27 / 28</span><span class="lt">养老与医疗：缴费满 15 年，看病按目录报销</span></a></li>
+      <li data-k="社会保险法 45 / 46 / 48 / 53 / 56 失业与生育：领取条件、期限与津贴"><a href="labor.html"><span class="lno">社会保险法 45 / 46 / 48 / 53 / 56</span><span class="lt">失业与生育：领取条件、期限与津贴</span></a></li>
+      <li data-k="劳动合同法 42 · 劳动法 29 医疗期内，不能以&quot;不胜任/客观情况变化/裁员&quot;辞退"><a href="labor.html"><span class="lno">劳动合同法 42 · 劳动法 29</span><span class="lt">医疗期内，不能以&quot;不胜任/客观情况变化/裁员&quot;辞退</span></a></li>
+      <li data-k="劳动合同法 40（一） 医疗期满仍不能工作，才能依法解除（付 n / n+1）"><a href="labor.html"><span class="lno">劳动合同法 40（一）</span><span class="lt">医疗期满仍不能工作，才能依法解除（付 N / N+1）</span></a></li>
+      <li data-k="劳动合同法 17 / 35 调岗降薪要协商一致、采用书面形式"><a href="labor.html"><span class="lno">劳动合同法 17 / 35</span><span class="lt">调岗降薪要协商一致、采用书面形式</span></a></li>
+      <li data-k="劳动合同法 40（二）· 4 &quot;排名末位&quot;不等于&quot;不能胜任工作&quot;"><a href="labor.html"><span class="lno">劳动合同法 40（二）· 4</span><span class="lt">&quot;排名末位&quot;不等于&quot;不能胜任工作&quot;</span></a></li>
+      <li data-k="女职工特别规定 5 / 6 / 7 / 8 / 9 产假 98 天起、生育津贴、每天 1 小时哺乳时间"><a href="labor.html"><span class="lno">女职工特别规定 5 / 6 / 7 / 8 / 9</span><span class="lt">产假 98 天起、生育津贴、每天 1 小时哺乳时间</span></a></li>
+      <li data-k="妇女权益保障法 43 / 45 / 48 招聘不得问婚育、三期合同自动顺延"><a href="labor.html"><span class="lno">妇女权益保障法 43 / 45 / 48</span><span class="lt">招聘不得问婚育、三期合同自动顺延</span></a></li>
+      <li data-k="劳动合同法 23 / 24 竞业限制：只限三类人、最长 2 年、按月给补偿"><a href="labor.html"><span class="lno">劳动合同法 23 / 24</span><span class="lt">竞业限制：只限三类人、最长 2 年、按月给补偿</span></a></li>
+    </ul>
+  </section>
+  <section class="vol">
+    <h2><a href="civil.html">民法典</a> <span class="cnt">33 条</span></h2>
+    <ul class="idxlist">
+      <li data-k="民法典 188 诉讼时效 3 年：权利&quot;到期不主张&quot;会失效"><a href="civil.html"><span class="lno">民法典 188</span><span class="lt">诉讼时效 3 年：权利&quot;到期不主张&quot;会失效</span></a></li>
+      <li data-k="民法典 147 / 148 / 150 / 151 / 153 哪些&quot;签字画押&quot;可以反悔：可撤销 vs 无效"><a href="civil.html"><span class="lno">民法典 147 / 148 / 150 / 151 / 153</span><span class="lt">哪些&quot;签字画押&quot;可以反悔：可撤销 vs 无效</span></a></li>
+      <li data-k="民法典 311 善意取得：从&quot;没权卖的人&quot;手里买东西也可能有效"><a href="civil.html"><span class="lno">民法典 311</span><span class="lt">善意取得：从&quot;没权卖的人&quot;手里买东西也可能有效</span></a></li>
+      <li data-k="民法典 366 / 371 居住权：一辈子住在别人房里的权利"><a href="civil.html"><span class="lno">民法典 366 / 371</span><span class="lt">居住权：一辈子住在别人房里的权利</span></a></li>
+      <li data-k="民法典 394 / 425 / 447 担保物权三兄弟：抵押 · 质押 · 留置"><a href="civil.html"><span class="lno">民法典 394 / 425 / 447</span><span class="lt">担保物权三兄弟：抵押 · 质押 · 留置</span></a></li>
+      <li data-k="民法典 297 / 301 / 303 / 305 共有：按份共有 vs 共同共有"><a href="civil.html"><span class="lno">民法典 297 / 301 / 303 / 305</span><span class="lt">共有：按份共有 vs 共同共有</span></a></li>
+      <li data-k="民法典 288 / 291 / 293 / 296 相邻关系：住得近，就要&quot;互相行方便&quot;"><a href="civil.html"><span class="lno">民法典 288 / 291 / 293 / 296</span><span class="lt">相邻关系：住得近，就要&quot;互相行方便&quot;</span></a></li>
+      <li data-k="民法典 402 / 403 / 406 抵押怎么设立？房子&quot;带押&quot;也能卖"><a href="civil.html"><span class="lno">民法典 402 / 403 / 406</span><span class="lt">抵押怎么设立？房子&quot;带押&quot;也能卖</span></a></li>
+      <li data-k="民法典 447 / 448 / 453 / 456 留置权：&quot;你不给钱，东西先扣着&quot;"><a href="civil.html"><span class="lno">民法典 447 / 448 / 453 / 456</span><span class="lt">留置权：&quot;你不给钱，东西先扣着&quot;</span></a></li>
+      <li data-k="民法典 586 / 587 定金：交定金方反悔，钱不退；收定金方反悔，双倍返还"><a href="civil.html"><span class="lno">民法典 586 / 587</span><span class="lt">定金：交定金方反悔，钱不退；收定金方反悔，双倍返还</span></a></li>
+      <li data-k="民法典 585 / 584 违约金与损失赔偿：过高可以请求调低"><a href="civil.html"><span class="lno">民法典 585 / 584</span><span class="lt">违约金与损失赔偿：过高可以请求调低</span></a></li>
+      <li data-k="民法典 496 / 497 格式条款：免除自己责任的&quot;小字条款&quot;可能无效"><a href="civil.html"><span class="lno">民法典 496 / 497</span><span class="lt">格式条款：免除自己责任的&quot;小字条款&quot;可能无效</span></a></li>
+      <li data-k="民法典 563 法定解除：什么情况下可以&quot;退合同&quot;"><a href="civil.html"><span class="lno">民法典 563</span><span class="lt">法定解除：什么情况下可以&quot;退合同&quot;</span></a></li>
+      <li data-k="民法典 590 / 533 不可抗力 &amp; 情势变更：不是&quot;想赖就赖&quot;"><a href="civil.html"><span class="lno">民法典 590 / 533</span><span class="lt">不可抗力 &amp; 情势变更：不是&quot;想赖就赖&quot;</span></a></li>
+      <li data-k="民法典 680 借款：禁止高利放贷，利息不能&quot;预扣&quot;"><a href="civil.html"><span class="lno">民法典 680</span><span class="lt">借款：禁止高利放贷，利息不能&quot;预扣&quot;</span></a></li>
+      <li data-k="民法典 725 / 726 租房：&quot;买卖不破租赁&quot; + 优先购买权"><a href="civil.html"><span class="lno">民法典 725 / 726</span><span class="lt">租房：&quot;买卖不破租赁&quot; + 优先购买权</span></a></li>
+      <li data-k="民法典 604 / 621 / 634 买卖合同：风险何时转移、质量何时提异议"><a href="civil.html"><span class="lno">民法典 604 / 621 / 634</span><span class="lt">买卖合同：风险何时转移、质量何时提异议</span></a></li>
+      <li data-k="民法典 658 / 661 / 663 / 666 赠与合同：送出去的东西能要回吗"><a href="civil.html"><span class="lno">民法典 658 / 661 / 663 / 666</span><span class="lt">赠与合同：送出去的东西能要回吗</span></a></li>
+      <li data-k="民法典 705 / 716 / 722 / 734 租赁合同：最长 20 年、转租、优先承租"><a href="civil.html"><span class="lno">民法典 705 / 716 / 722 / 734</span><span class="lt">租赁合同：最长 20 年、转租、优先承租</span></a></li>
+      <li data-k="民法典 933 / 961 / 965 委托合同与中介合同：随时可解、跳单要付钱"><a href="civil.html"><span class="lno">民法典 933 / 961 / 965</span><span class="lt">委托合同与中介合同：随时可解、跳单要付钱</span></a></li>
+      <li data-k="民法典 979 / 981 / 983 无因管理：帮别人管了事，可以要回&quot;垫的钱&quot;"><a href="civil.html"><span class="lno">民法典 979 / 981 / 983</span><span class="lt">无因管理：帮别人管了事，可以要回&quot;垫的钱&quot;</span></a></li>
+      <li data-k="民法典 985 / 986 / 987 / 988 不当得利：&quot;白占的便宜&quot;要还回来"><a href="civil.html"><span class="lno">民法典 985 / 986 / 987 / 988</span><span class="lt">不当得利：&quot;白占的便宜&quot;要还回来</span></a></li>
+      <li data-k="民法典 1024 / 1025 / 1028 名誉权：被造谣、被辱骂怎么办"><a href="civil.html"><span class="lno">民法典 1024 / 1025 / 1028</span><span class="lt">名誉权：被造谣、被辱骂怎么办</span></a></li>
+      <li data-k="民法典 1019 / 1020 / 1023 肖像权：&quot;ai 换脸&quot;&quot;盗图带货&quot;的边界"><a href="civil.html"><span class="lno">民法典 1019 / 1020 / 1023</span><span class="lt">肖像权：&quot;AI 换脸&quot;&quot;盗图带货&quot;的边界</span></a></li>
+      <li data-k="民法典 1032 / 1033 隐私权：这些&quot;越界&quot;行为都违法"><a href="civil.html"><span class="lno">民法典 1032 / 1033</span><span class="lt">隐私权：这些&quot;越界&quot;行为都违法</span></a></li>
+      <li data-k="民法典 1034 / 1035 / 1038 个人信息：处理要&quot;合法、正当、必要&quot;"><a href="civil.html"><span class="lno">民法典 1034 / 1035 / 1038</span><span class="lt">个人信息：处理要&quot;合法、正当、必要&quot;</span></a></li>
+      <li data-k="民法典 1064 夫妻共同债务：不是对方欠的都要你还"><a href="civil.html"><span class="lno">民法典 1064</span><span class="lt">夫妻共同债务：不是对方欠的都要你还</span></a></li>
+      <li data-k="民法典 1076 / 1077 / 1079 离婚：协议要冷静期，诉讼看&quot;感情破裂&quot;"><a href="civil.html"><span class="lno">民法典 1076 / 1077 / 1079</span><span class="lt">离婚：协议要冷静期，诉讼看&quot;感情破裂&quot;</span></a></li>
+      <li data-k="民法典 1084 / 1087 / 1088 子女抚养、财产分割与家务补偿"><a href="civil.html"><span class="lno">民法典 1084 / 1087 / 1088</span><span class="lt">子女抚养、财产分割与家务补偿</span></a></li>
+      <li data-k="民法典 1127 / 1128 法定继承顺序：谁先继承、谁后继承"><a href="civil.html"><span class="lno">民法典 1127 / 1128</span><span class="lt">法定继承顺序：谁先继承、谁后继承</span></a></li>
+      <li data-k="民法典 1134–1139 遗嘱六种形式：哪种最容易无效"><a href="civil.html"><span class="lno">民法典 1134–1139</span><span class="lt">遗嘱六种形式：哪种最容易无效</span></a></li>
+      <li data-k="民法典 1160 / 1145 遗产管理人 &amp; 无人继承"><a href="civil.html"><span class="lno">民法典 1160 / 1145</span><span class="lt">遗产管理人 &amp; 无人继承</span></a></li>
+      <li data-k="民法典 1217 好意同乘：白蹭车出事故，司机责任可减轻"><a href="civil.html"><span class="lno">民法典 1217</span><span class="lt">好意同乘：白蹭车出事故，司机责任可减轻</span></a></li>
+    </ul>
+  </section>
+  <section class="vol">
+    <h2><a href="criminal.html">刑法·犯罪</a> <span class="cnt">10 条</span></h2>
+    <ul class="idxlist">
+      <li data-k="刑法 20 / 21 正当防卫 · 紧急避险：合法的&quot;反击&quot;与&quot;避险&quot;"><a href="criminal.html"><span class="lno">刑法 20 / 21</span><span class="lt">正当防卫 · 紧急避险：合法的&quot;反击&quot;与&quot;避险&quot;</span></a></li>
+      <li data-k="刑法 67 / 68 自首与立功：主动交代、揭发他人"><a href="criminal.html"><span class="lno">刑法 67 / 68</span><span class="lt">自首与立功：主动交代、揭发他人</span></a></li>
+      <li data-k="刑法 72 / 73 / 74 缓刑：判了先不进监狱"><a href="criminal.html"><span class="lno">刑法 72 / 73 / 74</span><span class="lt">缓刑：判了先不进监狱</span></a></li>
+      <li data-k="刑法 232 / 234 故意杀人 · 故意伤害"><a href="criminal.html"><span class="lno">刑法 232 / 234</span><span class="lt">故意杀人 · 故意伤害</span></a></li>
+      <li data-k="刑法 238 / 239 / 240 非法拘禁 · 绑架 · 拐卖妇女儿童"><a href="criminal.html"><span class="lno">刑法 238 / 239 / 240</span><span class="lt">非法拘禁 · 绑架 · 拐卖妇女儿童</span></a></li>
+      <li data-k="刑法 347 走私、贩卖、运输、制造毒品罪"><a href="criminal.html"><span class="lno">刑法 347</span><span class="lt">走私、贩卖、运输、制造毒品罪</span></a></li>
+      <li data-k="刑法 287 之二 帮助信息网络犯罪活动罪（&quot;帮信罪&quot;）"><a href="criminal.html"><span class="lno">刑法 287 之二</span><span class="lt">帮助信息网络犯罪活动罪（&quot;帮信罪&quot;）</span></a></li>
+      <li data-k="刑法 30 / 31 单位犯罪：公司也会&quot;犯罪&quot;"><a href="criminal.html"><span class="lno">刑法 30 / 31</span><span class="lt">单位犯罪：公司也会&quot;犯罪&quot;</span></a></li>
+      <li data-k="刑诉 101 · 刑法 36 附带民事诉讼：刑事之外索赔"><a href="criminal.html"><span class="lno">刑诉 101 · 刑法 36</span><span class="lt">附带民事诉讼：刑事之外索赔</span></a></li>
+      <li data-k="刑诉 34 / 39 / 67 辩护权与取保候审：被追诉人的权利"><a href="criminal.html"><span class="lno">刑诉 34 / 39 / 67</span><span class="lt">辩护权与取保候审：被追诉人的权利</span></a></li>
+    </ul>
+  </section>
+  <section class="vol">
+    <h2><a href="consumer.html">消费·借贷·房产</a> <span class="cnt">10 条</span></h2>
+    <ul class="idxlist">
+      <li data-k="消保法 55 假一赔三：最低赔 500 元"><a href="consumer.html"><span class="lno">消保法 55</span><span class="lt">假一赔三：最低赔 500 元</span></a></li>
+      <li data-k="消保法 25 七日无理由退货：网购的&quot;后悔权&quot;"><a href="consumer.html"><span class="lno">消保法 25</span><span class="lt">七日无理由退货：网购的&quot;后悔权&quot;</span></a></li>
+      <li data-k="食品安全法 148 食品十倍赔偿：最低赔 1000 元"><a href="consumer.html"><span class="lno">食品安全法 148</span><span class="lt">食品十倍赔偿：最低赔 1000 元</span></a></li>
+      <li data-k="民间借贷司法解释 利率上限：一年期 lpr 的 4 倍"><a href="consumer.html"><span class="lno">民间借贷司法解释</span><span class="lt">利率上限：一年期 LPR 的 4 倍</span></a></li>
+      <li data-k="民法典 703 / 725 / 726 / 716 租房：租期、涨租、卖房、转租"><a href="consumer.html"><span class="lno">民法典 703 / 725 / 726 / 716</span><span class="lt">租房：租期、涨租、卖房、转租</span></a></li>
+      <li data-k="消保法 24 &quot;三包&quot;：修理、更换、退货"><a href="consumer.html"><span class="lno">消保法 24</span><span class="lt">&quot;三包&quot;：修理、更换、退货</span></a></li>
+      <li data-k="消保法 53 预付卡：不按约定服务，就得退钱"><a href="consumer.html"><span class="lno">消保法 53</span><span class="lt">预付卡：不按约定服务，就得退钱</span></a></li>
+      <li data-k="消保法 44 网络交易平台：找不到商家，可以找平台"><a href="consumer.html"><span class="lno">消保法 44</span><span class="lt">网络交易平台：找不到商家，可以找平台</span></a></li>
+      <li data-k="电子商务法 38 平台的连带责任与审核义务"><a href="consumer.html"><span class="lno">电子商务法 38</span><span class="lt">平台的连带责任与审核义务</span></a></li>
+      <li data-k="消保法 45 · 电商法 17 虚假广告与直播间：谁宣传谁担责"><a href="consumer.html"><span class="lno">消保法 45 · 电商法 17</span><span class="lt">虚假广告与直播间：谁宣传谁担责</span></a></li>
+    </ul>
+  </section>
+  <section class="vol">
+    <h2><a href="traffic.html">交通·治安</a> <span class="cnt">14 条</span></h2>
+    <ul class="idxlist">
+      <li data-k="道路交通安全法 91 饮酒驾驶：行政处罚"><a href="traffic.html"><span class="lno">道路交通安全法 91</span><span class="lt">饮酒驾驶：行政处罚</span></a></li>
+      <li data-k="道路交通安全法 91 / 刑法 133之一 醉酒驾驶：刑事犯罪"><a href="traffic.html"><span class="lno">道路交通安全法 91 / 刑法 133之一</span><span class="lt">醉酒驾驶：刑事犯罪</span></a></li>
+      <li data-k="道路交通安全法 8 · 9 机动车登记制度"><a href="traffic.html"><span class="lno">道路交通安全法 8 · 9</span><span class="lt">机动车登记制度</span></a></li>
+      <li data-k="道路交通安全法 19 · 24 驾驶证与累积记分"><a href="traffic.html"><span class="lno">道路交通安全法 19 · 24</span><span class="lt">驾驶证与累积记分</span></a></li>
+      <li data-k="道路交通安全法 73 《道路交通事故认定书》是定责依据"><a href="traffic.html"><span class="lno">道路交通安全法 73</span><span class="lt">《道路交通事故认定书》是定责依据</span></a></li>
+      <li data-k="道路交通安全法 76 / 民法典 1213 赔付顺序：强制险 → 商业险 → 侵权人"><a href="traffic.html"><span class="lno">道路交通安全法 76 / 民法典 1213</span><span class="lt">赔付顺序：强制险 → 商业险 → 侵权人</span></a></li>
+      <li data-k="民法典 1179 · 1183 能赔哪些项目：人身损害的法定清单"><a href="traffic.html"><span class="lno">民法典 1179 · 1183</span><span class="lt">能赔哪些项目：人身损害的法定清单</span></a></li>
+      <li data-k="道路交通安全法 119 · 58 · 18 电动自行车算不算&quot;机动车&quot;？"><a href="traffic.html"><span class="lno">道路交通安全法 119 · 58 · 18</span><span class="lt">电动自行车算不算&quot;机动车&quot;？</span></a></li>
+      <li data-k="道路交通安全法 57 · 62 · 67 行人与非机动车通行规则"><a href="traffic.html"><span class="lno">道路交通安全法 57 · 62 · 67</span><span class="lt">行人与非机动车通行规则</span></a></li>
+      <li data-k="道路交通安全法 76 · 89 机动车撞行人 / 非机动车：责任与成本"><a href="traffic.html"><span class="lno">道路交通安全法 76 · 89</span><span class="lt">机动车撞行人 / 非机动车：责任与成本</span></a></li>
+      <li data-k="治安管理处罚法 96 · 97 传唤与询问查证"><a href="traffic.html"><span class="lno">治安管理处罚法 96 · 97</span><span class="lt">传唤与询问查证</span></a></li>
+      <li data-k="治安管理处罚法 119 · 118 · 116 当场处罚、办理期限与送达"><a href="traffic.html"><span class="lno">治安管理处罚法 119 · 118 · 116</span><span class="lt">当场处罚、办理期限与送达</span></a></li>
+      <li data-k="治安管理处罚法 117 听证：重罚前的&quot;当面说理&quot;"><a href="traffic.html"><span class="lno">治安管理处罚法 117</span><span class="lt">听证：重罚前的&quot;当面说理&quot;</span></a></li>
+      <li data-k="治安管理处罚法 126 · 127 暂缓执行行政拘留"><a href="traffic.html"><span class="lno">治安管理处罚法 126 · 127</span><span class="lt">暂缓执行行政拘留</span></a></li>
+    </ul>
+  </section>
+  <section class="vol">
+    <h2><a href="admin.html">行政法</a> <span class="cnt">11 条</span></h2>
+    <ul class="idxlist">
+      <li data-k="行政处罚法 44 / 63 处罚前必须&quot;告知&quot;和&quot;听你申辩&quot;"><a href="admin.html"><span class="lno">行政处罚法 44 / 63</span><span class="lt">处罚前必须&quot;告知&quot;和&quot;听你申辩&quot;</span></a></li>
+      <li data-k="行政处罚法 29 / 36 一事不再罚 &amp; 追责时效"><a href="admin.html"><span class="lno">行政处罚法 29 / 36</span><span class="lt">一事不再罚 &amp; 追责时效</span></a></li>
+      <li data-k="立法法 11 &quot;法律保留&quot;：这些事只能由法律规定"><a href="admin.html"><span class="lno">立法法 11</span><span class="lt">&quot;法律保留&quot;：这些事只能由法律规定</span></a></li>
+      <li data-k="立法法 91 · 93 规章的边界：不能&quot;越权减损权利&quot;"><a href="admin.html"><span class="lno">立法法 91 · 93</span><span class="lt">规章的边界：不能&quot;越权减损权利&quot;</span></a></li>
+      <li data-k="行政处罚法 42 · 51 · 52 简易程序：什么能&quot;当场&quot;罚"><a href="admin.html"><span class="lno">行政处罚法 42 · 51 · 52</span><span class="lt">简易程序：什么能&quot;当场&quot;罚</span></a></li>
+      <li data-k="行政处罚法 44 · 45 · 60 · 61 普通程序：告知、申辩、决定、送达"><a href="admin.html"><span class="lno">行政处罚法 44 · 45 · 60 · 61</span><span class="lt">普通程序：告知、申辩、决定、送达</span></a></li>
+      <li data-k="行政处罚法 63 · 64 听证：重罚前的&quot;准法庭&quot;"><a href="admin.html"><span class="lno">行政处罚法 63 · 64</span><span class="lt">听证：重罚前的&quot;准法庭&quot;</span></a></li>
+      <li data-k="行政强制法 10 · 13 谁能设定行政强制？"><a href="admin.html"><span class="lno">行政强制法 10 · 13</span><span class="lt">谁能设定行政强制？</span></a></li>
+      <li data-k="行政强制法 23 · 24 · 25 查封、扣押的边界与期限"><a href="admin.html"><span class="lno">行政强制法 23 · 24 · 25</span><span class="lt">查封、扣押的边界与期限</span></a></li>
+      <li data-k="国家赔偿法 3 · 4 行政赔偿范围：侵犯人身权与财产权"><a href="admin.html"><span class="lno">国家赔偿法 3 · 4</span><span class="lt">行政赔偿范围：侵犯人身权与财产权</span></a></li>
+      <li data-k="国家赔偿法 7 · 9 · 12 · 13 找谁赔、怎么赔、多久答复"><a href="admin.html"><span class="lno">国家赔偿法 7 · 9 · 12 · 13</span><span class="lt">找谁赔、怎么赔、多久答复</span></a></li>
+    </ul>
+  </section>
+  <section class="vol">
+    <h2><a href="procedure.html">程序法</a> <span class="cnt">13 条</span></h2>
+    <ul class="idxlist">
+      <li data-k="民事诉讼法 103 诉讼保全（诉中）：判决难执行就可申请"><a href="procedure.html"><span class="lno">民事诉讼法 103</span><span class="lt">诉讼保全（诉中）：判决难执行就可申请</span></a></li>
+      <li data-k="民事诉讼法 104 诉前保全：保全后 30 日内必须起诉"><a href="procedure.html"><span class="lno">民事诉讼法 104</span><span class="lt">诉前保全：保全后 30 日内必须起诉</span></a></li>
+      <li data-k="民事诉讼法 84 证据保全：把可能消失的证据&quot;固定&quot;下来"><a href="procedure.html"><span class="lno">民事诉讼法 84</span><span class="lt">证据保全：把可能消失的证据&quot;固定&quot;下来</span></a></li>
+      <li data-k="民事诉讼法 128 答辩：15 日内提出答辩状"><a href="procedure.html"><span class="lno">民事诉讼法 128</span><span class="lt">答辩：15 日内提出答辩状</span></a></li>
+      <li data-k="民事诉讼法 130 管辖权异议：只在答辩期内提，逾期视为接受"><a href="procedure.html"><span class="lno">民事诉讼法 130</span><span class="lt">管辖权异议：只在答辩期内提，逾期视为接受</span></a></li>
+      <li data-k="民事诉讼法 54 / 143 反诉：被告的&quot;反向起诉&quot;"><a href="procedure.html"><span class="lno">民事诉讼法 54 / 143</span><span class="lt">反诉：被告的&quot;反向起诉&quot;</span></a></li>
+      <li data-k="民事诉讼法 68 举证期限：逾期交证据可能不被采纳"><a href="procedure.html"><span class="lno">民事诉讼法 68</span><span class="lt">举证期限：逾期交证据可能不被采纳</span></a></li>
+      <li data-k="民事诉讼法 96 / 100 调解：自愿、合法，双方签收即生效"><a href="procedure.html"><span class="lno">民事诉讼法 96 / 100</span><span class="lt">调解：自愿、合法，双方签收即生效</span></a></li>
+      <li data-k="民事诉讼法 171 / 177 / 182 二审：15 日 / 10 日上诉，二审裁定判决即终审"><a href="procedure.html"><span class="lno">民事诉讼法 171 / 177 / 182</span><span class="lt">二审：15 日 / 10 日上诉，二审裁定判决即终审</span></a></li>
+      <li data-k="民事诉讼法 210 / 211 / 216 再审：生效裁判确有错误的纠错通道"><a href="procedure.html"><span class="lno">民事诉讼法 210 / 211 / 216</span><span class="lt">再审：生效裁判确有错误的纠错通道</span></a></li>
+      <li data-k="民事诉讼法 225 / 227 / 228 督促程序（支付令）：15 日不异议即可申请执行"><a href="procedure.html"><span class="lno">民事诉讼法 225 / 227 / 228</span><span class="lt">督促程序（支付令）：15 日不异议即可申请执行</span></a></li>
+      <li data-k="民事诉讼法 229 / 230 / 233 公示催告：票据被盗、遗失、灭失的补救"><a href="procedure.html"><span class="lno">民事诉讼法 229 / 230 / 233</span><span class="lt">公示催告：票据被盗、遗失、灭失的补救</span></a></li>
+      <li data-k="行政诉讼法 12 / 34 / 46 行政诉讼：民告官，被告行政机关负举证责任"><a href="procedure.html"><span class="lno">行政诉讼法 12 / 34 / 46</span><span class="lt">行政诉讼：民告官，被告行政机关负举证责任</span></a></li>
+    </ul>
+  </section>
+  <section class="vol">
+    <h2><a href="constitution.html">宪法</a> <span class="cnt">21 条</span></h2>
+    <ul class="idxlist">
+      <li data-k="宪法 第5条 宪法至上：一切下位法都不得同宪法相抵触"><a href="constitution.html"><span class="lno">宪法 第5条</span><span class="lt">宪法至上：一切下位法都不得同宪法相抵触</span></a></li>
+      <li data-k="宪法 第64条 宪法怎么改：2/3 高门槛，普通法律只需过半"><a href="constitution.html"><span class="lno">宪法 第64条</span><span class="lt">宪法怎么改：2/3 高门槛，普通法律只需过半</span></a></li>
+      <li data-k="宪法 52–56 基本义务的原文：权利的另一面"><a href="constitution.html"><span class="lno">宪法 52–56</span><span class="lt">基本义务的原文：权利的另一面</span></a></li>
+      <li data-k="宪法 第1条 国体：国家是什么性质的国家"><a href="constitution.html"><span class="lno">宪法 第1条</span><span class="lt">国体：国家是什么性质的国家</span></a></li>
+      <li data-k="宪法 第2条 一切权力属于人民：权力的来源"><a href="constitution.html"><span class="lno">宪法 第2条</span><span class="lt">一切权力属于人民：权力的来源</span></a></li>
+      <li data-k="宪法 第3条 民主集中制：国家机关如何组织起来"><a href="constitution.html"><span class="lno">宪法 第3条</span><span class="lt">民主集中制：国家机关如何组织起来</span></a></li>
+      <li data-k="宪法 第4条 民族平等与区域自治"><a href="constitution.html"><span class="lno">宪法 第4条</span><span class="lt">民族平等与区域自治</span></a></li>
+      <li data-k="宪法 第13条 私有财产与继承权受保护"><a href="constitution.html"><span class="lno">宪法 第13条</span><span class="lt">私有财产与继承权受保护</span></a></li>
+      <li data-k="宪法 第37条 人身自由的&quot;程序锁&quot;"><a href="constitution.html"><span class="lno">宪法 第37条</span><span class="lt">人身自由的&quot;程序锁&quot;</span></a></li>
+      <li data-k="宪法 第38 / 39 条 人格尊严与住宅不受侵犯"><a href="constitution.html"><span class="lno">宪法 第38 / 39 条</span><span class="lt">人格尊严与住宅不受侵犯</span></a></li>
+      <li data-k="宪法 第40条 通信自由与通信秘密：两道例外"><a href="constitution.html"><span class="lno">宪法 第40条</span><span class="lt">通信自由与通信秘密：两道例外</span></a></li>
+      <li data-k="宪法 第41条 监督权与国家赔偿：公民制约公权力"><a href="constitution.html"><span class="lno">宪法 第41条</span><span class="lt">监督权与国家赔偿：公民制约公权力</span></a></li>
+      <li data-k="宪法 第42 / 43 条 劳动权与休息权"><a href="constitution.html"><span class="lno">宪法 第42 / 43 条</span><span class="lt">劳动权与休息权</span></a></li>
+      <li data-k="宪法 第45条 物质帮助权：年老、疾病、丧失劳动能力时的兜底"><a href="constitution.html"><span class="lno">宪法 第45条</span><span class="lt">物质帮助权：年老、疾病、丧失劳动能力时的兜底</span></a></li>
+      <li data-k="宪法 第46 / 48 条 受教育权与男女平等"><a href="constitution.html"><span class="lno">宪法 第46 / 48 条</span><span class="lt">受教育权与男女平等</span></a></li>
+      <li data-k="宪法 第49 / 51 条 婚姻家庭受保护 · 权利的边界"><a href="constitution.html"><span class="lno">宪法 第49 / 51 条</span><span class="lt">婚姻家庭受保护 · 权利的边界</span></a></li>
+      <li data-k="国家赔偿法 第2条 国家赔偿的总开关"><a href="constitution.html"><span class="lno">国家赔偿法 第2条</span><span class="lt">国家赔偿的总开关</span></a></li>
+      <li data-k="国家赔偿法 第3 / 4 条 行政赔偿范围：人身权 + 财产权"><a href="constitution.html"><span class="lno">国家赔偿法 第3 / 4 条</span><span class="lt">行政赔偿范围：人身权 + 财产权</span></a></li>
+      <li data-k="国家赔偿法 第5条 这几种情形，国家不赔"><a href="constitution.html"><span class="lno">国家赔偿法 第5条</span><span class="lt">这几种情形，国家不赔</span></a></li>
+      <li data-k="国家赔偿法 第17条 刑事赔偿范围：错拘、错捕、错判"><a href="constitution.html"><span class="lno">国家赔偿法 第17条</span><span class="lt">刑事赔偿范围：错拘、错捕、错判</span></a></li>
+      <li data-k="立法法 第110条 公民也能&quot;挑刺&quot;：审查建议制度"><a href="constitution.html"><span class="lno">立法法 第110条</span><span class="lt">公民也能&quot;挑刺&quot;：审查建议制度</span></a></li>
+    </ul>
+  </section>
+  <section class="vol">
+    <h2><a href="company.html">公司·商事</a> <span class="cnt">16 条</span></h2>
+    <ul class="idxlist">
+      <li data-k="公司法 47 认缴出资 5 年内必须缴足（2023 新法重大变化）"><a href="company.html"><span class="lno">公司法 47</span><span class="lt">认缴出资 5 年内必须缴足（2023 新法重大变化）</span></a></li>
+      <li data-k="公司法 57 知情权：可以查账，还能带会计师"><a href="company.html"><span class="lno">公司法 57</span><span class="lt">知情权：可以查账，还能带会计师</span></a></li>
+      <li data-k="公司法 189 股东代表诉讼：为公司&quot;讨公道&quot;"><a href="company.html"><span class="lno">公司法 189</span><span class="lt">股东代表诉讼：为公司&quot;讨公道&quot;</span></a></li>
+      <li data-k="公司法 51 / 52 董事要核查催缴；股东可能&quot;失权&quot;"><a href="company.html"><span class="lno">公司法 51 / 52</span><span class="lt">董事要核查催缴；股东可能&quot;失权&quot;</span></a></li>
+      <li data-k="公司法 54 出资加速到期：公司还不起债时，股东得提前掏钱"><a href="company.html"><span class="lno">公司法 54</span><span class="lt">出资加速到期：公司还不起债时，股东得提前掏钱</span></a></li>
+      <li data-k="公司法 53 / 88 抽逃出资 &amp; 转让未届期股权的责任"><a href="company.html"><span class="lno">公司法 53 / 88</span><span class="lt">抽逃出资 &amp; 转让未届期股权的责任</span></a></li>
+      <li data-k="公司法 84 股权对外转让：不再需要其他股东&quot;过半数同意&quot;"><a href="company.html"><span class="lno">公司法 84</span><span class="lt">股权对外转让：不再需要其他股东&quot;过半数同意&quot;</span></a></li>
+      <li data-k="公司法 86 / 90 股东名册与资格继承"><a href="company.html"><span class="lno">公司法 86 / 90</span><span class="lt">股东名册与资格继承</span></a></li>
+      <li data-k="公司法 32 / 56 + 民法典 925 / 927 股权代持：谁是真股东、风险在哪"><a href="company.html"><span class="lno">公司法 32 / 56 + 民法典 925 / 927</span><span class="lt">股权代持：谁是真股东、风险在哪</span></a></li>
+      <li data-k="公司法 180 忠实勤勉义务 + &quot;事实董事&quot;（2023 新增）"><a href="company.html"><span class="lno">公司法 180</span><span class="lt">忠实勤勉义务 + &quot;事实董事&quot;（2023 新增）</span></a></li>
+      <li data-k="公司法 182 关联交易：先报告、后决议"><a href="company.html"><span class="lno">公司法 182</span><span class="lt">关联交易：先报告、后决议</span></a></li>
+      <li data-k="公司法 15 对外担保：为股东/实控人担保须股东会决议"><a href="company.html"><span class="lno">公司法 15</span><span class="lt">对外担保：为股东/实控人担保须股东会决议</span></a></li>
+      <li data-k="公司法 11 / 67 法定代表人越权：善意相对人受保护"><a href="company.html"><span class="lno">公司法 11 / 67</span><span class="lt">法定代表人越权：善意相对人受保护</span></a></li>
+      <li data-k="公司法 229 / 232 解散与清算：董事是清算义务人"><a href="company.html"><span class="lno">公司法 229 / 232</span><span class="lt">解散与清算：董事是清算义务人</span></a></li>
+      <li data-k="公司法 235 / 236 清算流程与清偿顺序"><a href="company.html"><span class="lno">公司法 235 / 236</span><span class="lt">清算流程与清偿顺序</span></a></li>
+      <li data-k="公司法 240 / 241 简易注销 &amp; 强制注销"><a href="company.html"><span class="lno">公司法 240 / 241</span><span class="lt">简易注销 &amp; 强制注销</span></a></li>
+    </ul>
+  </section>
+  <section class="vol">
+    <h2><a href="family.html">婚姻家庭与继承</a> <span class="cnt">20 条</span></h2>
+    <ul class="idxlist">
+      <li data-k="彩礼规定 2024 彩礼返还：三种情形 + 新规&quot;短期高额&quot;"><a href="family.html"><span class="lno">彩礼规定 2024</span><span class="lt">彩礼返还：三种情形 + 新规&quot;短期高额&quot;</span></a></li>
+      <li data-k="民法典 1064 夫妻共同债务：不是对方欠的都要你还"><a href="family.html"><span class="lno">民法典 1064</span><span class="lt">夫妻共同债务：不是对方欠的都要你还</span></a></li>
+      <li data-k="民法典 1088 家务劳动补偿：全职顾家也&quot;值钱&quot;"><a href="family.html"><span class="lno">民法典 1088</span><span class="lt">家务劳动补偿：全职顾家也&quot;值钱&quot;</span></a></li>
+      <li data-k="民法典 1065 夫妻财产约定：可以&quot;各归各&quot;，但要书面"><a href="family.html"><span class="lno">民法典 1065</span><span class="lt">夫妻财产约定：可以&quot;各归各&quot;，但要书面</span></a></li>
+      <li data-k="民法典 1066 婚内财产分割：不离婚也能&quot;分家产&quot;"><a href="family.html"><span class="lno">民法典 1066</span><span class="lt">婚内财产分割：不离婚也能&quot;分家产&quot;</span></a></li>
+      <li data-k="民法典 1054 婚姻被宣告无效/被撤销后，财产、债务、子女怎么办"><a href="family.html"><span class="lno">民法典 1054</span><span class="lt">婚姻被宣告无效/被撤销后，财产、债务、子女怎么办</span></a></li>
+      <li data-k="反家庭暴力法 23 / 28 / 29 人身安全保护令：家暴受害者可向法院申请"><a href="family.html"><span class="lno">反家庭暴力法 23 / 28 / 29</span><span class="lt">人身安全保护令：家暴受害者可向法院申请</span></a></li>
+      <li data-k="民法典 1071 / 1073 亲子关系：确认、否认与非婚生子女"><a href="family.html"><span class="lno">民法典 1071 / 1073</span><span class="lt">亲子关系：确认、否认与非婚生子女</span></a></li>
+      <li data-k="民法典 1093–1115 收养：谁能被收养、谁能收养、怎么成立"><a href="family.html"><span class="lno">民法典 1093–1115</span><span class="lt">收养：谁能被收养、谁能收养、怎么成立</span></a></li>
+      <li data-k="民法典 26 / 27 / 33 / 34 / 36 监护与意定监护：失能之后谁来管我"><a href="family.html"><span class="lno">民法典 26 / 27 / 33 / 34 / 36</span><span class="lt">监护与意定监护：失能之后谁来管我</span></a></li>
+      <li data-k="民法典 1127 / 1128 法定继承顺序"><a href="family.html"><span class="lno">民法典 1127 / 1128</span><span class="lt">法定继承顺序</span></a></li>
+      <li data-k="民法典 1134–1139 遗嘱六种形式与效力"><a href="family.html"><span class="lno">民法典 1134–1139</span><span class="lt">遗嘱六种形式与效力</span></a></li>
+      <li data-k="民法典 1141 / 1145 必留份 &amp; 遗产管理人"><a href="family.html"><span class="lno">民法典 1141 / 1145</span><span class="lt">必留份 &amp; 遗产管理人</span></a></li>
+      <li data-k="民法典 1122 遗产是什么：死亡时遗留的个人合法财产"><a href="family.html"><span class="lno">民法典 1122</span><span class="lt">遗产是什么：死亡时遗留的个人合法财产</span></a></li>
+      <li data-k="民法典 1158 遗赠扶养协议：你养我老，我留你产"><a href="family.html"><span class="lno">民法典 1158</span><span class="lt">遗赠扶养协议：你养我老，我留你产</span></a></li>
+      <li data-k="民法典 1159 / 1161 / 1162 / 1163 债务清偿：以遗产为限，&quot;父债子还&quot;是误区"><a href="family.html"><span class="lno">民法典 1159 / 1161 / 1162 / 1163</span><span class="lt">债务清偿：以遗产为限，&quot;父债子还&quot;是误区</span></a></li>
+      <li data-k="民法典 1128 代位继承：子女先走，孙辈顶上"><a href="family.html"><span class="lno">民法典 1128</span><span class="lt">代位继承：子女先走，孙辈顶上</span></a></li>
+      <li data-k="民法典 1152 转继承：分遗产前，继承人又走了"><a href="family.html"><span class="lno">民法典 1152</span><span class="lt">转继承：分遗产前，继承人又走了</span></a></li>
+      <li data-k="民法典 1125 丧失继承权：五种情形，以及&quot;宽恕制度&quot;"><a href="family.html"><span class="lno">民法典 1125</span><span class="lt">丧失继承权：五种情形，以及&quot;宽恕制度&quot;</span></a></li>
+      <li data-k="民法典 1130 / 1153 / 1155 / 1156 / 1133 遗产份额与分割方式 + 遗嘱信托"><a href="family.html"><span class="lno">民法典 1130 / 1153 / 1155 / 1156 / 1133</span><span class="lt">遗产份额与分割方式 + 遗嘱信托</span></a></li>
+    </ul>
+  </section>
+  <section class="vol">
+    <h2><a href="cyber.html">网络·数据·个人信息</a> <span class="cnt">15 条</span></h2>
+    <ul class="idxlist">
+      <li data-k="个保法 13 / 14 / 17 处理你的信息，必须有&quot;合法性基础 + 告知同意&quot;"><a href="cyber.html"><span class="lno">个保法 13 / 14 / 17</span><span class="lt">处理你的信息，必须有&quot;合法性基础 + 告知同意&quot;</span></a></li>
+      <li data-k="个保法 50 想行使权利，处理者必须受理——不能装死"><a href="cyber.html"><span class="lno">个保法 50</span><span class="lt">想行使权利，处理者必须受理——不能装死</span></a></li>
+      <li data-k="个保法 49 人已去世，其个人信息怎么办"><a href="cyber.html"><span class="lno">个保法 49</span><span class="lt">人已去世，其个人信息怎么办</span></a></li>
+      <li data-k="个保法 45 / 47 查阅复制、可携带与删除的具体条件"><a href="cyber.html"><span class="lno">个保法 45 / 47</span><span class="lt">查阅复制、可携带与删除的具体条件</span></a></li>
+      <li data-k="个保法 23 把信息给第三方：必须单独同意"><a href="cyber.html"><span class="lno">个保法 23</span><span class="lt">把信息给第三方：必须单独同意</span></a></li>
+      <li data-k="个保法 9 / 51 / 52 处理者的基本义务清单"><a href="cyber.html"><span class="lno">个保法 9 / 51 / 52</span><span class="lt">处理者的基本义务清单</span></a></li>
+      <li data-k="个保法 55 / 56 个人信息保护影响评估（pia）"><a href="cyber.html"><span class="lno">个保法 55 / 56</span><span class="lt">个人信息保护影响评估（PIA）</span></a></li>
+      <li data-k="个保法 57 信息泄露：立即补救 + 通知"><a href="cyber.html"><span class="lno">个保法 57</span><span class="lt">信息泄露：立即补救 + 通知</span></a></li>
+      <li data-k="个保法 24 大数据杀熟、算法推送、自动决定——你有拒绝权"><a href="cyber.html"><span class="lno">个保法 24</span><span class="lt">大数据杀熟、算法推送、自动决定——你有拒绝权</span></a></li>
+      <li data-k="个保法 38 / 39 / 40 个人信息出境：四条合法路径"><a href="cyber.html"><span class="lno">个保法 38 / 39 / 40</span><span class="lt">个人信息出境：四条合法路径</span></a></li>
+      <li data-k="反电诈法 31 出借银行卡/电话卡/支付账户 → 违法，后果很重"><a href="cyber.html"><span class="lno">反电诈法 31</span><span class="lt">出借银行卡/电话卡/支付账户 → 违法，后果很重</span></a></li>
+      <li data-k="反电诈法 25 为诈骗提供&quot;帮助&quot;，同样违法"><a href="cyber.html"><span class="lno">反电诈法 25</span><span class="lt">为诈骗提供&quot;帮助&quot;，同样违法</span></a></li>
+      <li data-k="民法典 1194–1197 网络侵权：通知删除、反通知、红旗规则"><a href="cyber.html"><span class="lno">民法典 1194–1197</span><span class="lt">网络侵权：通知删除、反通知、红旗规则</span></a></li>
+      <li data-k="个保法 58 大型平台：更重的&quot;守门人&quot;义务"><a href="cyber.html"><span class="lno">个保法 58</span><span class="lt">大型平台：更重的&quot;守门人&quot;义务</span></a></li>
+      <li data-k="未保法 77 / 78 网络欺凌：不得对未成年人侮辱、诽谤、恶意损害形象"><a href="cyber.html"><span class="lno">未保法 77 / 78</span><span class="lt">网络欺凌：不得对未成年人侮辱、诽谤、恶意损害形象</span></a></li>
+    </ul>
+  </section>
+  <section class="vol">
+    <h2><a href="contract.html">合同与交易</a> <span class="cnt">15 条</span></h2>
+    <ul class="idxlist">
+      <li data-k="民法典 496 / 497 格式条款：小字条款也可能无效"><a href="contract.html"><span class="lno">民法典 496 / 497</span><span class="lt">格式条款：小字条款也可能无效</span></a></li>
+      <li data-k="民法典 142 意思表示怎么解释"><a href="contract.html"><span class="lno">民法典 142</span><span class="lt">意思表示怎么解释</span></a></li>
+      <li data-k="民法典 466 合同条款有争议时如何解释"><a href="contract.html"><span class="lno">民法典 466</span><span class="lt">合同条款有争议时如何解释</span></a></li>
+      <li data-k="民法典 545 / 546 债权让与：通知债务人即可，不必其同意"><a href="contract.html"><span class="lno">民法典 545 / 546</span><span class="lt">债权让与：通知债务人即可，不必其同意</span></a></li>
+      <li data-k="民法典 551 / 552 债务承担：必须经债权人同意"><a href="contract.html"><span class="lno">民法典 551 / 552</span><span class="lt">债务承担：必须经债权人同意</span></a></li>
+      <li data-k="民法典 555 / 556 合同权利义务一并转让（概括转让）"><a href="contract.html"><span class="lno">民法典 555 / 556</span><span class="lt">合同权利义务一并转让（概括转让）</span></a></li>
+      <li data-k="民法典 557 债权债务终止的六种情形"><a href="contract.html"><span class="lno">民法典 557</span><span class="lt">债权债务终止的六种情形</span></a></li>
+      <li data-k="民法典 568 抵销：互相欠钱可&quot;对冲&quot;"><a href="contract.html"><span class="lno">民法典 568</span><span class="lt">抵销：互相欠钱可&quot;对冲&quot;</span></a></li>
+      <li data-k="民法典 570 / 573 提存：债权人&quot;不收货&quot;时怎么还"><a href="contract.html"><span class="lno">民法典 570 / 573</span><span class="lt">提存：债权人&quot;不收货&quot;时怎么还</span></a></li>
+      <li data-k="民法典 563 / 565 / 566 合同解除：法定情形、通知生效与后果"><a href="contract.html"><span class="lno">民法典 563 / 565 / 566</span><span class="lt">合同解除：法定情形、通知生效与后果</span></a></li>
+      <li data-k="民法典 598 / 604 交付与风险：风险随交付转移"><a href="contract.html"><span class="lno">民法典 598 / 604</span><span class="lt">交付与风险：风险随交付转移</span></a></li>
+      <li data-k="民法典 641 / 642 所有权保留：付清全款前，东西还是卖方的"><a href="contract.html"><span class="lno">民法典 641 / 642</span><span class="lt">所有权保留：付清全款前，东西还是卖方的</span></a></li>
+      <li data-k="民法典 686 / 687 / 692 / 693 保证：方式约定不明＝一般保证"><a href="contract.html"><span class="lno">民法典 686 / 687 / 692 / 693</span><span class="lt">保证：方式约定不明＝一般保证</span></a></li>
+      <li data-k="民法典 394 / 402 / 403 / 406 / 410 抵押：不动产登记设立，动产登记对抗"><a href="contract.html"><span class="lno">民法典 394 / 402 / 403 / 406 / 410</span><span class="lt">抵押：不动产登记设立，动产登记对抗</span></a></li>
+      <li data-k="民法典 965 &quot;跳单&quot;也要付中介费"><a href="contract.html"><span class="lno">民法典 965</span><span class="lt">&quot;跳单&quot;也要付中介费</span></a></li>
+    </ul>
+  </section>
+  <section class="vol">
+    <h2><a href="finance.html">金融与保险消费</a> <span class="cnt">19 条</span></h2>
+    <ul class="idxlist">
+      <li data-k="征信业管理条例 13 / 14 / 16 / 17 征信报告：能记什么、能记多久、错了怎么办"><a href="finance.html"><span class="lno">征信业管理条例 13 / 14 / 16 / 17</span><span class="lt">征信报告：能记什么、能记多久、错了怎么办</span></a></li>
+      <li data-k="民法典 686 / 692 保证方式与保证期间"><a href="finance.html"><span class="lno">民法典 686 / 692</span><span class="lt">保证方式与保证期间</span></a></li>
+      <li data-k="担保制度解释 7 公司为他人担保：要看决议"><a href="finance.html"><span class="lno">担保制度解释 7</span><span class="lt">公司为他人担保：要看决议</span></a></li>
+      <li data-k="银行卡纠纷规定 4 / 7 银行卡被盗刷，银行要担责"><a href="finance.html"><span class="lno">银行卡纠纷规定 4 / 7</span><span class="lt">银行卡被盗刷，银行要担责</span></a></li>
+      <li data-k="征信业管理条例 15 / 18 记录之前要告知，查询之前要同意"><a href="finance.html"><span class="lno">征信业管理条例 15 / 18</span><span class="lt">记录之前要告知，查询之前要同意</span></a></li>
+      <li data-k="征信业管理条例 25 / 26 记错了怎么办：异议 20 日、投诉 30 日"><a href="finance.html"><span class="lno">征信业管理条例 25 / 26</span><span class="lt">记错了怎么办：异议 20 日、投诉 30 日</span></a></li>
+      <li data-k="个人信息保护法 28 / 29 / 47 信用信息是&quot;敏感个人信息&quot;，受更严格保护"><a href="finance.html"><span class="lno">个人信息保护法 28 / 29 / 47</span><span class="lt">信用信息是&quot;敏感个人信息&quot;，受更严格保护</span></a></li>
+      <li data-k="民法典 394 / 402 / 403 / 405 抵押权：不动产登记设立，动产登记对抗"><a href="finance.html"><span class="lno">民法典 394 / 402 / 403 / 405</span><span class="lt">抵押权：不动产登记设立，动产登记对抗</span></a></li>
+      <li data-k="民法典 406 / 410 / 414 / 419 抵押物能卖吗？怎么实现？谁先受偿？"><a href="finance.html"><span class="lno">民法典 406 / 410 / 414 / 419</span><span class="lt">抵押物能卖吗？怎么实现？谁先受偿？</span></a></li>
+      <li data-k="民法典 425 / 429 / 440 质权：交付才设立，权利也能出质"><a href="finance.html"><span class="lno">民法典 425 / 429 / 440</span><span class="lt">质权：交付才设立，权利也能出质</span></a></li>
+      <li data-k="保险法 13 / 14 / 15 合同何时成立、生效，谁来解除"><a href="finance.html"><span class="lno">保险法 13 / 14 / 15</span><span class="lt">合同何时成立、生效，谁来解除</span></a></li>
+      <li data-k="保险法 16 / 17 如实告知与&quot;两年不可抗辩&quot;"><a href="finance.html"><span class="lno">保险法 16 / 17</span><span class="lt">如实告知与&quot;两年不可抗辩&quot;</span></a></li>
+      <li data-k="保险法 22 / 23 / 25 / 30 理赔时间表与&quot;有利于被保险人&quot;解释"><a href="finance.html"><span class="lno">保险法 22 / 23 / 25 / 30</span><span class="lt">理赔时间表与&quot;有利于被保险人&quot;解释</span></a></li>
+      <li data-k="保险法 12 / 31 保险利益：不是谁都能给你投保"><a href="finance.html"><span class="lno">保险法 12 / 31</span><span class="lt">保险利益：不是谁都能给你投保</span></a></li>
+      <li data-k="保险法 33 / 34 以死亡为给付条件的保险，须被保险人同意"><a href="finance.html"><span class="lno">保险法 33 / 34</span><span class="lt">以死亡为给付条件的保险，须被保险人同意</span></a></li>
+      <li data-k="保险法 56 重复保险：赔款总和不超过保险价值"><a href="finance.html"><span class="lno">保险法 56</span><span class="lt">重复保险：赔款总和不超过保险价值</span></a></li>
+      <li data-k="保险法 60 代位求偿：赔付后可代你向责任方追偿"><a href="finance.html"><span class="lno">保险法 60</span><span class="lt">代位求偿：赔付后可代你向责任方追偿</span></a></li>
+      <li data-k="证券法 85 / 163 虚假陈述：发行人赔，相关主体可能连带"><a href="finance.html"><span class="lno">证券法 85 / 163</span><span class="lt">虚假陈述：发行人赔，相关主体可能连带</span></a></li>
+      <li data-k="证券法 89 / 93 / 94 / 95 维权路径：举证倒置、先行赔付、代表人诉讼"><a href="finance.html"><span class="lno">证券法 89 / 93 / 94 / 95</span><span class="lt">维权路径：举证倒置、先行赔付、代表人诉讼</span></a></li>
+    </ul>
+  </section>
+  <section class="vol">
+    <h2><a href="special.html">特殊群体与救助</a> <span class="cnt">16 条</span></h2>
+    <ul class="idxlist">
+      <li data-k="未保法 11 / 74 / 75 强制报告 &amp; 网络防沉迷"><a href="special.html"><span class="lno">未保法 11 / 74 / 75</span><span class="lt">强制报告 &amp; 网络防沉迷</span></a></li>
+      <li data-k="预防未成年人犯罪法 不良行为 → 严重不良行为 → 专门矫治"><a href="special.html"><span class="lno">预防未成年人犯罪法</span><span class="lt">不良行为 → 严重不良行为 → 专门矫治</span></a></li>
+      <li data-k="妇女权益保障法 43 就业性别歧视：这 5 种做法违法"><a href="special.html"><span class="lno">妇女权益保障法 43</span><span class="lt">就业性别歧视：这 5 种做法违法</span></a></li>
+      <li data-k="法律援助法 31 9 类事项可申请法律援助"><a href="special.html"><span class="lno">法律援助法 31</span><span class="lt">9 类事项可申请法律援助</span></a></li>
+      <li data-k="民法典 27 / 31 / 34 / 36 谁是监护人？失职可被撤销资格"><a href="special.html"><span class="lno">民法典 27 / 31 / 34 / 36</span><span class="lt">谁是监护人？失职可被撤销资格</span></a></li>
+      <li data-k="未保法 22 / 92 外出务工的&quot;委托照护&quot;与民政&quot;临时监护&quot;"><a href="special.html"><span class="lno">未保法 22 / 92</span><span class="lt">外出务工的&quot;委托照护&quot;与民政&quot;临时监护&quot;</span></a></li>
+      <li data-k="未保法 39 / 130 校园欺凌：学校必须制止、不得隐瞒"><a href="special.html"><span class="lno">未保法 39 / 130</span><span class="lt">校园欺凌：学校必须制止、不得隐瞒</span></a></li>
+      <li data-k="民法典 1093 / 1098 / 1104 / 1105 / 1111 收养：谁能收养、谁可被收养、何时成立"><a href="special.html"><span class="lno">民法典 1093 / 1098 / 1104 / 1105 / 1111</span><span class="lt">收养：谁能收养、谁可被收养、何时成立</span></a></li>
+      <li data-k="反家庭暴力法 2 / 13 / 14 / 16 什么是家暴？谁会&quot;必须报案&quot;？"><a href="special.html"><span class="lno">反家庭暴力法 2 / 13 / 14 / 16</span><span class="lt">什么是家暴？谁会&quot;必须报案&quot;？</span></a></li>
+      <li data-k="反家庭暴力法 23 / 28 / 29 / 30 / 37 人身安全保护令：72 小时（紧急 24 小时）"><a href="special.html"><span class="lno">反家庭暴力法 23 / 28 / 29 / 30 / 37</span><span class="lt">人身安全保护令：72 小时（紧急 24 小时）</span></a></li>
+      <li data-k="民法典 33 意定监护：趁清醒，把&quot;以后谁管我&quot;定下来"><a href="special.html"><span class="lno">民法典 33</span><span class="lt">意定监护：趁清醒，把&quot;以后谁管我&quot;定下来</span></a></li>
+      <li data-k="民法典 1133 / 1134–1139 / 1140 / 1141 / 1142 遗嘱：六种形式各有&quot;硬要求&quot;"><a href="special.html"><span class="lno">民法典 1133 / 1134–1139 / 1140 / 1141 / 1142</span><span class="lt">遗嘱：六种形式各有&quot;硬要求&quot;</span></a></li>
+      <li data-k="残疾人保障法 3 / 33 / 38 平等就业：按比例安排 + 不得歧视"><a href="special.html"><span class="lno">残疾人保障法 3 / 33 / 38</span><span class="lt">平等就业：按比例安排 + 不得歧视</span></a></li>
+      <li data-k="残疾人保障法 21 / 46 / 47 / 50 教育、社会保障与出行便利"><a href="special.html"><span class="lno">残疾人保障法 21 / 46 / 47 / 50</span><span class="lt">教育、社会保障与出行便利</span></a></li>
+      <li data-k="法律援助法 25 / 36 刑事&quot;通知辩护&quot;：7 类人没有辩护人，公检法必须通知"><a href="special.html"><span class="lno">法律援助法 25 / 36</span><span class="lt">刑事&quot;通知辩护&quot;：7 类人没有辩护人，公检法必须通知</span></a></li>
+      <li data-k="法律援助法 32 / 42 / 43 不查经济困难 / 免予核查 / 审查时限"><a href="special.html"><span class="lno">法律援助法 32 / 42 / 43</span><span class="lt">不查经济困难 / 免予核查 / 审查时限</span></a></li>
+    </ul>
+  </section>
+  <section class="vol">
+    <h2><a href="tax.html">税收与发票</a> <span class="cnt">21 条</span></h2>
+    <ul class="idxlist">
+      <li data-k="个人所得税法 1、9 居民个人 vs 非居民个人：183 天是分界线"><a href="tax.html"><span class="lno">个人所得税法 1、9</span><span class="lt">居民个人 vs 非居民个人：183 天是分界线</span></a></li>
+      <li data-k="个人所得税法 2 综合所得&quot;打包算&quot;，其余所得&quot;分开算&quot;"><a href="tax.html"><span class="lno">个人所得税法 2</span><span class="lt">综合所得&quot;打包算&quot;，其余所得&quot;分开算&quot;</span></a></li>
+      <li data-k="个人所得税法 6 综合所得：按年算，年度汇算清缴"><a href="tax.html"><span class="lno">个人所得税法 6</span><span class="lt">综合所得：按年算，年度汇算清缴</span></a></li>
+      <li data-k="个人所得税法 10 哪些人必须办理纳税申报"><a href="tax.html"><span class="lno">个人所得税法 10</span><span class="lt">哪些人必须办理纳税申报</span></a></li>
+      <li data-k="个税法实施条例 31 退税：信息错了可以更正，单位没缴不影响你退"><a href="tax.html"><span class="lno">个税法实施条例 31</span><span class="lt">退税：信息错了可以更正，单位没缴不影响你退</span></a></li>
+      <li data-k="个人所得税法 6 专项扣除 = 基本养老、基本医疗、失业保险 + 住房公积金"><a href="tax.html"><span class="lno">个人所得税法 6</span><span class="lt">专项扣除 = 基本养老、基本医疗、失业保险 + 住房公积金</span></a></li>
+      <li data-k="个税法实施条例 13、28 扣除有&quot;年度上限&quot;，用不完不结转"><a href="tax.html"><span class="lno">个税法实施条例 13、28</span><span class="lt">扣除有&quot;年度上限&quot;，用不完不结转</span></a></li>
+      <li data-k="个税法实施条例 6 什么是&quot;经营所得&quot;"><a href="tax.html"><span class="lno">个税法实施条例 6</span><span class="lt">什么是&quot;经营所得&quot;</span></a></li>
+      <li data-k="个人所得税法 6、3 财产租赁、财产转让怎么算"><a href="tax.html"><span class="lno">个人所得税法 6、3</span><span class="lt">财产租赁、财产转让怎么算</span></a></li>
+      <li data-k="增值税法 3、8、9 谁要交、怎么算：一般计税 vs 简易计税"><a href="tax.html"><span class="lno">增值税法 3、8、9</span><span class="lt">谁要交、怎么算：一般计税 vs 简易计税</span></a></li>
+      <li data-k="增值税法 22 这六类进项税&quot;不能抵扣&quot;"><a href="tax.html"><span class="lno">增值税法 22</span><span class="lt">这六类进项税&quot;不能抵扣&quot;</span></a></li>
+      <li data-k="发票管理办法 19、21 发票不是&quot;随便开&quot;：如实开具、禁止虚开"><a href="tax.html"><span class="lno">发票管理办法 19、21</span><span class="lt">发票不是&quot;随便开&quot;：如实开具、禁止虚开</span></a></li>
+      <li data-k="个人所得税法 4 个税：这十类所得免征"><a href="tax.html"><span class="lno">个人所得税法 4</span><span class="lt">个税：这十类所得免征</span></a></li>
+      <li data-k="个人所得税法 5 减征：残疾、孤老、烈属与重大灾害"><a href="tax.html"><span class="lno">个人所得税法 5</span><span class="lt">减征：残疾、孤老、烈属与重大灾害</span></a></li>
+      <li data-k="增值税法 23、24、27 增值税：起征点、免税项目与放弃优惠"><a href="tax.html"><span class="lno">增值税法 23、24、27</span><span class="lt">增值税：起征点、免税项目与放弃优惠</span></a></li>
+      <li data-k="税收征管法 32 晚交税：按日加收万分之五滞纳金"><a href="tax.html"><span class="lno">税收征管法 32</span><span class="lt">晚交税：按日加收万分之五滞纳金</span></a></li>
+      <li data-k="税收征管法 54 税务检查：可以查账、查场所、问情况"><a href="tax.html"><span class="lno">税收征管法 54</span><span class="lt">税务检查：可以查账、查场所、问情况</span></a></li>
+      <li data-k="税收征管法 38 税收保全：防止&quot;转移财产逃避纳税&quot;"><a href="tax.html"><span class="lno">税收征管法 38</span><span class="lt">税收保全：防止&quot;转移财产逃避纳税&quot;</span></a></li>
+      <li data-k="税收征管法 63 什么是&quot;偷税&quot;"><a href="tax.html"><span class="lno">税收征管法 63</span><span class="lt">什么是&quot;偷税&quot;</span></a></li>
+      <li data-k="刑法 201 逃税罪：初犯补缴可免责（特殊规则）"><a href="tax.html"><span class="lno">刑法 201</span><span class="lt">逃税罪：初犯补缴可免责（特殊规则）</span></a></li>
+      <li data-k="税收征管法 88 和税务局有争议：纳税争议&quot;先缴税，再复议&quot;"><a href="tax.html"><span class="lno">税收征管法 88</span><span class="lt">和税务局有争议：纳税争议&quot;先缴税，再复议&quot;</span></a></li>
+    </ul>
+  </section>
+  <section class="vol">
+    <h2><a href="housing.html">房产与物业</a> <span class="cnt">28 条</span></h2>
+    <ul class="idxlist">
+      <li data-k="城市房地产管理法 45 预售必须满足的四个条件"><a href="housing.html"><span class="lno">城市房地产管理法 45</span><span class="lt">预售必须满足的四个条件</span></a></li>
+      <li data-k="城市房地产管理法 27 没竣工验收合格，不能交付"><a href="housing.html"><span class="lno">城市房地产管理法 27</span><span class="lt">没竣工验收合格，不能交付</span></a></li>
+      <li data-k="城市房地产管理法 61 / 不动产登记暂行条例 14 交房后办证：谁去申请"><a href="housing.html"><span class="lno">城市房地产管理法 61 / 不动产登记暂行条例 14</span><span class="lt">交房后办证：谁去申请</span></a></li>
+      <li data-k="商品房买卖合同解释 面积误差超 3%，可以退房"><a href="housing.html"><span class="lno">商品房买卖合同解释</span><span class="lt">面积误差超 3%，可以退房</span></a></li>
+      <li data-k="民法典 563、587 久拖不交房，可以解除合同并主张定金罚则"><a href="housing.html"><span class="lno">民法典 563、587</span><span class="lt">久拖不交房，可以解除合同并主张定金罚则</span></a></li>
+      <li data-k="城市房地产管理法 38 这七类房子，法律禁止转让"><a href="housing.html"><span class="lno">城市房地产管理法 38</span><span class="lt">这七类房子，法律禁止转让</span></a></li>
+      <li data-k="契税法 1、3、4、6 买方必交的契税：谁交、按什么价、多少税率"><a href="housing.html"><span class="lno">契税法 1、3、4、6</span><span class="lt">买方必交的契税：谁交、按什么价、多少税率</span></a></li>
+      <li data-k="民法典 209、214、215 登记才发生物权效力；合同有效≠拿到房"><a href="housing.html"><span class="lno">民法典 209、214、215</span><span class="lt">登记才发生物权效力；合同有效≠拿到房</span></a></li>
+      <li data-k="民法典 311 善意取得：不知情 + 合理价 + 已登记"><a href="housing.html"><span class="lno">民法典 311</span><span class="lt">善意取得：不知情 + 合理价 + 已登记</span></a></li>
+      <li data-k="民法典 221 预告登记：锁定&quot;将来买房&quot;的权利"><a href="housing.html"><span class="lno">民法典 221</span><span class="lt">预告登记：锁定&quot;将来买房&quot;的权利</span></a></li>
+      <li data-k="民法典 705、707、725、726 买卖不破租赁、优先购买权与租期上限"><a href="housing.html"><span class="lno">民法典 705、707、725、726</span><span class="lt">买卖不破租赁、优先购买权与租期上限</span></a></li>
+      <li data-k="民法典 716、718 转租：经同意才有效"><a href="housing.html"><span class="lno">民法典 716、718</span><span class="lt">转租：经同意才有效</span></a></li>
+      <li data-k="民法典 937、939、940 物业服务合同的&quot;约束力&quot;与&quot;前期合同终止&quot;"><a href="housing.html"><span class="lno">民法典 937、939、940</span><span class="lt">物业服务合同的&quot;约束力&quot;与&quot;前期合同终止&quot;</span></a></li>
+      <li data-k="物业管理条例 40、41、44 物业费怎么定、谁交、代收能不能加价"><a href="housing.html"><span class="lno">物业管理条例 40、41、44</span><span class="lt">物业费怎么定、谁交、代收能不能加价</span></a></li>
+      <li data-k="民法典 278、279 / 物业管理条例 10、15 业主大会、业委会与&quot;住改商&quot;"><a href="housing.html"><span class="lno">民法典 278、279 / 物业管理条例 10、15</span><span class="lt">业主大会、业委会与&quot;住改商&quot;</span></a></li>
+      <li data-k="物业管理条例 53 专项维修资金：业主所有，专款专用，不得挪用"><a href="housing.html"><span class="lno">物业管理条例 53</span><span class="lt">专项维修资金：业主所有，专款专用，不得挪用</span></a></li>
+      <li data-k="物业管理条例 54 / 民法典 282 公共收益：先征同意，收益补充维修资金"><a href="housing.html"><span class="lno">物业管理条例 54 / 民法典 282</span><span class="lt">公共收益：先征同意，收益补充维修资金</span></a></li>
+      <li data-k="物业管理条例 22、55 临时管理规约与安全隐患维修"><a href="housing.html"><span class="lno">物业管理条例 22、55</span><span class="lt">临时管理规约与安全隐患维修</span></a></li>
+      <li data-k="房屋征收条例 17 / 19 / 21 / 27 国有土地上房屋征收：补偿项目与&quot;先补偿后搬迁&quot;"><a href="housing.html"><span class="lno">房屋征收条例 17 / 19 / 21 / 27</span><span class="lt">国有土地上房屋征收：补偿项目与&quot;先补偿后搬迁&quot;</span></a></li>
+      <li data-k="房屋征收条例 19 补偿底线与评估救济"><a href="housing.html"><span class="lno">房屋征收条例 19</span><span class="lt">补偿底线与评估救济</span></a></li>
+      <li data-k="房屋征收条例 26、27 谈不拢：补偿决定、禁止暴力逼迁"><a href="housing.html"><span class="lno">房屋征收条例 26、27</span><span class="lt">谈不拢：补偿决定、禁止暴力逼迁</span></a></li>
+      <li data-k="土地管理法 47 征地程序：公告不少于 30 日、听取意见、必要时听证"><a href="housing.html"><span class="lno">土地管理法 47</span><span class="lt">征地程序：公告不少于 30 日、听取意见、必要时听证</span></a></li>
+      <li data-k="土地管理法 48 补偿内容：区片综合地价 + 住宅补偿 + 社会保障"><a href="housing.html"><span class="lno">土地管理法 48</span><span class="lt">补偿内容：区片综合地价 + 住宅补偿 + 社会保障</span></a></li>
+      <li data-k="住房公积金管理条例 16、24、25 缴存、提取与办理时限"><a href="housing.html"><span class="lno">住房公积金管理条例 16、24、25</span><span class="lt">缴存、提取与办理时限</span></a></li>
+      <li data-k="住房公积金管理条例 26 公积金贷款：10 日内答复"><a href="housing.html"><span class="lno">住房公积金管理条例 26</span><span class="lt">公积金贷款：10 日内答复</span></a></li>
+      <li data-k="民法典 406 抵押的房子可以卖，但抵押权不受影响"><a href="housing.html"><span class="lno">民法典 406</span><span class="lt">抵押的房子可以卖，但抵押权不受影响</span></a></li>
+      <li data-k="城市房地产管理法 38 / 不动产登记暂行条例 5 被查封的房子，不能转让"><a href="housing.html"><span class="lno">城市房地产管理法 38 / 不动产登记暂行条例 5</span><span class="lt">被查封的房子，不能转让</span></a></li>
+      <li data-k="民法典 366 居住权：房子过户了，人家可能还能住"><a href="housing.html"><span class="lno">民法典 366</span><span class="lt">居住权：房子过户了，人家可能还能住</span></a></li>
+    </ul>
+  </section>
+  <section class="vol">
+    <h2><a href="study.html">如何高效学法</a> <span class="cnt">6 条</span></h2>
+    <ul class="idxlist">
+      <li data-k="立法法 98 / 99 / 100 法的位阶：宪法最高，法律高于法规、规章"><a href="study.html"><span class="lno">立法法 98 / 99 / 100</span><span class="lt">法的位阶：宪法最高，法律高于法规、规章</span></a></li>
+      <li data-k="民法典 1 / 2 / 10 民法管什么：平等主体的人身与财产关系"><a href="study.html"><span class="lno">民法典 1 / 2 / 10</span><span class="lt">民法管什么：平等主体的人身与财产关系</span></a></li>
+      <li data-k="立法法 103 / 104 · 民法典 11 规定打架怎么办：三条冲突规则"><a href="study.html"><span class="lno">立法法 103 / 104 · 民法典 11</span><span class="lt">规定打架怎么办：三条冲突规则</span></a></li>
+      <li data-k="民法典 179 民事责任的方式：不止&quot;赔钱&quot;一种"><a href="study.html"><span class="lno">民法典 179</span><span class="lt">民事责任的方式：不止&quot;赔钱&quot;一种</span></a></li>
+      <li data-k="民事诉讼法 123 / 124 民事起诉状：法定必备四项"><a href="study.html"><span class="lno">民事诉讼法 123 / 124</span><span class="lt">民事起诉状：法定必备四项</span></a></li>
+      <li data-k="民事诉讼法 128 · 调解仲裁法 28 答辩状与劳动仲裁申请书"><a href="study.html"><span class="lno">民事诉讼法 128 · 调解仲裁法 28</span><span class="lt">答辩状与劳动仲裁申请书</span></a></li>
+    </ul>
+  </section>
+
+<div class="disclaimer" style="margin-top:30px"><b>说明：</b>本页由站内各分卷自动汇总生成。条文以国家法律法规数据库现行有效文本为准，各分卷底部附官方原文链接。本图谱为普法整理，不构成法律意见。</div>
+</div>
+
+<script>
+(function(){
+  var q=document.getElementById('q'),items=[].slice.call(document.querySelectorAll('.idxlist li')),
+      vols=[].slice.call(document.querySelectorAll('.vol')),shown=document.getElementById('shown'),
+      empty=document.getElementById('empty'),total=items.length;
+  function run(){
+    var s=q.value.trim().toLowerCase(),n=0;
+    items.forEach(function(li){var hit=!s||li.getAttribute('data-k').indexOf(s)>-1;li.classList.toggle('hide',!hit);if(hit)n++;});
+    vols.forEach(function(v){var vis=v.querySelectorAll('.idxlist li:not(.hide)').length;v.style.display=vis?'':'none';});
+    shown.textContent=n;empty.style.display=n?'none':'block';
+  }
+  q.addEventListener('input',run);
+  run();
+})();
+</script>
+</body>
+</html>
