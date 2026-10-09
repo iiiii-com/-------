@@ -7,10 +7,10 @@
 ## 分卷导航
 
 - **总览** `index.html` — 三大骨架（效力金字塔 / 七大部门法 / 公私法与实体程序法）+ 全部分卷入口
-- **部门法**：宪法 `constitution` · 民法典 `civil` · 刑法·犯罪 `criminal` · 消费·借贷·房产 `consumer` · 劳动维权 `labor` · 行政法 `admin` · 程序法 `procedure` · 交通·治安 `traffic`
+- **部门法**：宪法 `constitution` · 民法典 `civil` · 刑法·犯罪 `criminal` · 消费·借贷·房产 `consumer` · 劳动维权 `labor` · 行政法 `admin` · 程序法 `procedure` · 交通·治安 `traffic` · 医疗与人身损害 `medical`
 - **专题**：公司·商事 `company` · 婚姻家庭与继承 `family` · 网络·数据·个人信息 `cyber` · 合同与交易 `contract` · 金融与保险消费 `finance` · 特殊群体与救助 `special` · 税收与发票 `tax` · 房产与物业 `housing`
 - **方法**：如何高效学法 `study`
-- **全站索引** `all.html` — 跨 18 卷汇总全部条文精讲，支持关键词搜索
+- **全站索引** `all.html` — 跨 19 卷汇总全部条文精讲，支持关键词搜索
 
 ## 本地查看
 

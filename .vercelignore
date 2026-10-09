@@ -1,0 +1,7 @@
+_corpus/
+.git/
+.gitignore
+_*.py
+_*.js
+_*.json
+shots/
